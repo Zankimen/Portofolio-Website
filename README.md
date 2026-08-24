@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Daffa Ayyasy — Portfolio
 
-## Getting Started
+Website portfolio personal berbasis Next.js, TypeScript, dan CSS custom. Saat ini isi profil, pengalaman, pendidikan, dan proyek masih berupa placeholder sesuai tahap awal roadmap.
 
-First, run the development server:
+## Menjalankan project
 
-```bash
+Install dependency:
+
+~~~bash
+npm install
+~~~
+
+Jalankan development server:
+
+~~~bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+~~~
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Buka [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Perintah penting
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+~~~bash
+npm run lint
+npm run build
+npm run start
+~~~
 
-## Learn More
+## Struktur konten
 
-To learn more about Next.js, take a look at the following resources:
+- src/content/portfolio.ts berisi semua data placeholder yang nanti diganti dengan informasi Daffa.
+- src/components/portfolio.tsx berisi struktur section dan layout halaman.
+- src/components/icons.tsx berisi ikon SVG custom.
+- src/app/globals.css berisi token warna, responsive layout, dan interaction state.
+- ROADMAP.md berisi alur lengkap dari project kosong sampai deployment domain.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Catatan sebelum production
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Ganti seluruh data placeholder sebelum website dipublikasikan.
+- Ganti email dan link GitHub dengan akun yang benar.
+- Tambahkan aset foto, screenshot proyek, OG image, dan resume bila sudah tersedia.
+- Ikuti checklist pada ROADMAP.md sebelum menghubungkan domain.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
