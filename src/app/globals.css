@@ -773,12 +773,112 @@ ul {
   gap: 18px;
 }
 
+.glow-container {
+  position: relative;
+  width: 100%;
+  --gap: 32;
+  --active: 0;
+  --start: 0deg;
+  --blur: 12;
+  --spread: 80;
+  --direction: row;
+}
+
 .glow-card {
+  --active: 0;
+  --start: 0;
   border: 1px solid var(--card-line);
+  isolation: isolate;
+  position: relative;
   border-radius: 12px;
   background: var(--surface);
   color: var(--text-soft);
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+  transition: border-color 300ms var(--ease);
+}
+
+.glow-card:is(:hover, :focus-within) {
+  z-index: 2;
+}
+
+.glows {
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+  filter: blur(calc(var(--blur) * 1px));
+}
+
+.glows::before,
+.glows::after {
+  --alpha: 0;
+  position: absolute;
+  inset: -5px;
+  border: 8px solid transparent;
+  border-radius: 12px;
+  background: conic-gradient(
+    from 180deg at 50% 70%,
+    #f626af 0deg,
+    #8228ec 72deg,
+    #f626af 144deg,
+    #0025ba 216deg,
+    #f626af 288deg,
+    #fafafa 360deg
+  ) fixed;
+  content: "";
+  opacity: var(--active);
+  pointer-events: none;
+  transition: opacity 1s;
+  -webkit-mask: linear-gradient(#0000, #0000), conic-gradient(from calc((var(--start) - var(--spread) * 0.5) * 1deg), #000 0deg, #fff, #0000 calc(var(--spread) * 1deg));
+  mask: linear-gradient(#0000, #0000), conic-gradient(from calc((var(--start) - var(--spread) * 0.5) * 1deg), #000 0deg, #fff, #0000 calc(var(--spread) * 1deg));
+  -webkit-mask-clip: padding-box, border-box;
+  mask-clip: padding-box, border-box;
+  -webkit-mask-composite: source-in, xor;
+  mask-composite: intersect;
+}
+
+.glow-card::before {
+  position: absolute;
+  inset: 0;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: #84738c fixed;
+  content: "";
+  opacity: var(--active);
+  pointer-events: none;
+  transition: opacity 1s;
+  -webkit-mask: linear-gradient(#0000, #0000), conic-gradient(from calc((var(--start) + var(--spread) * 0.25 - var(--spread) * 1.5) * 1deg), #ffffff26 0deg, white, #ffffff26 calc(var(--spread) * 2.5deg));
+  mask: linear-gradient(#0000, #0000), conic-gradient(from calc((var(--start) + var(--spread) * 0.25 - var(--spread) * 1.5) * 1deg), #ffffff26 0deg, white, #ffffff26 calc(var(--spread) * 2.5deg));
+  -webkit-mask-clip: padding-box, border-box;
+  mask-clip: padding-box, border-box;
+  -webkit-mask-composite: source-in, xor;
+  mask-composite: intersect;
+}
+
+.glow-card::after {
+  position: absolute;
+  inset: 0;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background: conic-gradient(
+    from 180deg at 50% 70%,
+    #f626af 0deg,
+    #8228ec 72deg,
+    #f626af 144deg,
+    #0025ba 216deg,
+    #f626af 288deg,
+    #fafafa 360deg
+  ) fixed;
+  content: "";
+  opacity: var(--active, 0);
+  filter: brightness(1.5);
+  pointer-events: none;
+  transition: opacity 1s;
+  -webkit-mask: linear-gradient(#0000, #0000), conic-gradient(from calc((var(--start) + var(--spread) * 0.25 - var(--spread) * 0.5) * 1deg), #0000 0deg, #fff, #0000 calc(var(--spread) * 0.5deg));
+  mask: linear-gradient(#0000, #0000), conic-gradient(from calc((var(--start) + var(--spread) * 0.25 - var(--spread) * 0.5) * 1deg), #0000 0deg, #fff, #0000 calc(var(--spread) * 0.5deg));
+  -webkit-mask-clip: padding-box, border-box;
+  mask-clip: padding-box, border-box;
+  -webkit-mask-composite: source-in, xor;
+  mask-composite: intersect;
 }
 
 .experience-lottie {
@@ -817,6 +917,8 @@ ul {
 }
 
 .resume-card-header {
+  position: relative;
+  z-index: 1;
   display: flex;
   gap: 16px;
   min-width: 0;
