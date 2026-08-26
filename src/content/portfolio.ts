@@ -59,13 +59,27 @@ export const experience = [
 ];
 
 export const skillGroups = [
-  { title: "Build", items: ["TypeScript", "React", "Next.js", "HTML & CSS"] },
   {
-    title: "Think",
-    items: ["Product thinking", "Design systems", "Content structure", "Problem solving"],
+    title: "Frontend",
+    description: "Building responsive and interactive user interfaces",
+    items: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js"],
   },
-  { title: "Work with", items: ["Git & GitHub", "Figma", "REST API", "Vercel"] },
-];
+  {
+    title: "Backend",
+    description: "Building robust server-side applications and APIs",
+    items: ["Node.js", "REST API", "API design", "Server logic", "TypeScript"],
+  },
+  {
+    title: "Data & Caching",
+    description: "Storing, managing and caching application data",
+    items: ["SQL basics", "Data modeling", "JSON", "Caching concepts"],
+  },
+  {
+    title: "DevOps & Tools",
+    description: "Tools and environments for development and deployment",
+    items: ["Git & GitHub", "Figma", "Vercel", "Responsive UI"],
+  },
+] as const;
 
 export const projects = [
   {

@@ -19,7 +19,13 @@ const socialLinks = [
   { label: "Instagram", icon: "instagram" as const, href: "https://www.instagram.com/" },
 ];
 
-const skillIcons = ["monitor", "code", "server", "database"] as const;
+const skillIcons = ["monitor", "server", "database", "code"] as const;
+const skillTraits = [
+  { title: "Always Learning", description: "Exploring new technologies", icon: "layers" as const },
+  { title: "Problem Solver", description: "Building efficient solutions", icon: "server" as const },
+  { title: "Clean Code", description: "Writing maintainable code", icon: "code" as const },
+  { title: "Performance First", description: "Optimizing for scalability", icon: "arrow" as const },
+];
 
 export function Portfolio() {
   return (
@@ -43,7 +49,7 @@ export function Portfolio() {
             <h1>
               Hello,
               <br />
-              My name is <span className="gradient-text">Muhammad Daffa' Ayyasy</span>.
+              My name is <span className="gradient-text">Muhammad Daffa&apos; Ayyasy</span>.
               <br />
               I am a <span className="hero-role">Digital Builder.</span>
             </h1>
@@ -116,22 +122,36 @@ export function Portfolio() {
         <PortfolioSectionTitle number="03" title="Skills" />
         <section id="skills" className="portfolio-section skills-section" aria-labelledby="skills-heading">
           <h2 id="skills-heading" className="sr-only">Skills</h2>
-          <div className="skills-panel">
-            <div className="skills-panel-aside">
-              <div className="large-icon-box"><Icon name="code" size={30} /></div>
-              <div>
-                <h3>Technical toolkit</h3>
-                <p>Tools for building thoughtful digital experiences.</p>
-              </div>
-            </div>
-            <div className="skill-chip-grid">
-              {skillGroups.flatMap((group, groupIndex) => group.items.map((item, itemIndex) => (
-                <div className="skill-chip" key={item}>
-                  <span className="skill-chip-icon"><Icon name={skillIcons[(groupIndex + itemIndex) % skillIcons.length]} size={22} /></span>
-                  <span>{item}</span>
+          <div className="skills-groups">
+            {skillGroups.map((group, groupIndex) => (
+              <article className="skills-group" key={group.title}>
+                <div className={"skills-group-info skills-tone-" + groupIndex}>
+                  <div className="skills-group-icon"><Icon name={skillIcons[groupIndex % skillIcons.length]} size={28} /></div>
+                  <div>
+                    <h3>{group.title}</h3>
+                    <p>{group.description}</p>
+                  </div>
                 </div>
-              )))}
-            </div>
+                <div className="skills-group-items">
+                  {group.items.map((item, itemIndex) => (
+                    <div className="skill-chip" key={item}>
+                      <span className={"skill-chip-icon skill-tone-" + ((groupIndex + itemIndex) % skillIcons.length)}>
+                        <Icon name={skillIcons[(groupIndex + itemIndex) % skillIcons.length]} size={30} />
+                      </span>
+                      <span>{item}</span>
+                    </div>
+                  ))}
+                </div>
+              </article>
+            ))}
+          </div>
+          <div className="skill-traits">
+            {skillTraits.map((trait) => (
+              <div className="skill-trait" key={trait.title}>
+                <span className="skill-trait-icon"><Icon name={trait.icon} size={18} /></span>
+                <span><strong>{trait.title}</strong><small>{trait.description}</small></span>
+              </div>
+            ))}
           </div>
         </section>
 
