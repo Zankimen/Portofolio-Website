@@ -336,6 +336,12 @@ ul {
   margin: 38px 0 30px;
 }
 
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
 .hero-socials a {
   display: grid;
   width: 44px;
@@ -371,6 +377,11 @@ ul {
   gap: 15px;
   border-color: rgba(22, 242, 179, 0.65);
   transform: translateY(-2px);
+}
+
+.resume-button {
+  border-color: rgba(236, 72, 153, 0.38);
+  background: linear-gradient(100deg, rgba(236, 72, 153, 0.84), rgba(124, 58, 237, 0.88));
 }
 
 .hero-portfolio-art {

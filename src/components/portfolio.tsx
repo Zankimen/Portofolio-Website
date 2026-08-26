@@ -14,9 +14,9 @@ import {
 } from "@/content/portfolio";
 
 const socialLinks = [
-  { label: "GitHub", icon: "github" as const, href: "https://github.com/" },
-  { label: "LinkedIn", icon: "linkedin" as const, href: "https://www.linkedin.com/" },
-  { label: "Instagram", icon: "instagram" as const, href: "https://www.instagram.com/" },
+  { label: "GitHub", icon: "github" as const, href: "https://github.com/Zankimen" },
+  { label: "LinkedIn", icon: "linkedin" as const, href: "https://www.linkedin.com/in/muhammad-daffa-ayyasy-a72b86329" },
+  { label: "Instagram", icon: "instagram" as const, href: "https://www.instagram.com/zankimen/" },
 ];
 
 const skillIcons = ["monitor", "server", "database", "code"] as const;
@@ -60,9 +60,14 @@ export function Portfolio() {
                 </a>
               ))}
             </div>
-            <a className="download-button" href="#about">
-              Explore my profile <Icon name="arrow" size={17} />
-            </a>
+            <div className="hero-actions">
+              <a className="download-button" href="#about">
+                Explore my profile <Icon name="arrow" size={17} />
+              </a>
+              <a className="download-button resume-button" href={profile.resumeUrl} target="_blank" rel="noreferrer">
+                Get CV <Icon name="download" size={17} />
+              </a>
+            </div>
           </div>
           <div className="hero-portfolio-art" aria-label="Decorative placeholder illustration">
             <div className="hero-glow-ring hero-glow-ring-one" />

@@ -5,6 +5,7 @@ export const profile = {
   location: "Jakarta, Indonesia",
   availability: "Available",
   email: "hello@daffaayyasy.com",
+  resumeUrl: "/cv/daffa-ayyasy-cv.pdf",
   intro:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Saya merancang pengalaman digital yang tenang, jelas, dan terasa berguna.",
   about:
