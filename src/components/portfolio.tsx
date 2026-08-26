@@ -43,7 +43,7 @@ export function Portfolio() {
             <h1>
               Hello,
               <br />
-              My name is <span className="gradient-text">Daffa Ayyasy</span>.
+              My name is <span className="gradient-text">Muhammad Daffa' Ayyasy</span>.
               <br />
               I am a <span className="hero-role">Digital Builder.</span>
             </h1>
@@ -71,7 +71,7 @@ export function Portfolio() {
               </div>
               <div className="terminal-cursor" />
             </div>
-            <p className="art-caption">01 / digital craft</p>
+            <p className="art-caption"></p>
           </div>
         </section>
 

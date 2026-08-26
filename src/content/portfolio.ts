@@ -3,7 +3,7 @@ export const profile = {
   shortName: "DA",
   role: "Digital builder & software enthusiast",
   location: "Jakarta, Indonesia",
-  availability: "Available for selected conversations",
+  availability: "Available",
   email: "hello@daffaayyasy.com",
   intro:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Saya merancang pengalaman digital yang tenang, jelas, dan terasa berguna.",
