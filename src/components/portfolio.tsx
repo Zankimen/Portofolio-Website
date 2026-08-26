@@ -124,7 +124,8 @@ export function Portfolio() {
           <h2 id="skills-heading" className="sr-only">Skills</h2>
           <div className="skills-groups">
             {skillGroups.map((group, groupIndex) => (
-              <article className="skills-group" key={group.title}>
+              <article className={`skills-group skills-group-tone-${groupIndex}`} key={group.title}>
+                <div className="skills-group-ambient" aria-hidden="true" />
                 <div className={"skills-group-info skills-tone-" + groupIndex}>
                   <div className="skills-group-icon"><Icon name={skillIcons[groupIndex % skillIcons.length]} size={28} /></div>
                   <div>
