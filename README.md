@@ -41,3 +41,12 @@ npm run start
 - Tambahkan aset foto, screenshot proyek, OG image, dan resume bila sudah tersedia.
 - Ikuti checklist pada ROADMAP.md sebelum menghubungkan domain.
 
+## Menambahkan foto profil
+
+1. Buat folder `public/images` jika belum ada.
+2. Masukkan foto JPG dengan nama `profile.jpg` ke folder tersebut.
+3. Jalankan ulang development server bila perlu, lalu buka section About.
+
+File di dalam `public` diakses dari root URL, sehingga `public/images/profile.jpg`
+menjadi `/images/profile.jpg`. Komponen foto sudah memakai `next/image` untuk
+menjaga ukuran layout dan memiliki fallback inisial `DA` sebelum file JPG tersedia.

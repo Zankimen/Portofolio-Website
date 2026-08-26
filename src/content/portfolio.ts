@@ -17,6 +17,7 @@ export const navigation = [
   { label: "Experience", href: "#experience", icon: "briefcase" },
   { label: "Skills", href: "#skills", icon: "code" },
   { label: "Projects", href: "#projects", icon: "layers" },
+  { label: "Education", href: "#education", icon: "graduation" },
   { label: "Contact", href: "#contact", icon: "mail" },
 ] as const;
 
@@ -27,6 +28,11 @@ export const experience = [
     company: "Placeholder Studio",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mengembangkan antarmuka dan alur produk dengan perhatian pada detail kecil.",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mengevaluasi kebutuhan dan merapikan masalah menjadi langkah kerja yang jelas.",
+      "Integer at lectus sed lorem posuere tincidunt. Berkolaborasi dengan tim untuk membangun pengalaman digital yang lebih terarah.",
+      "Pellentesque habitant morbi tristique senectus et netus. Menjaga kualitas implementasi melalui review dan iterasi.",
+    ],
   },
   {
     period: "2023 — 2024",
@@ -34,6 +40,10 @@ export const experience = [
     company: "Example Works",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Berkolaborasi dengan tim untuk membuat pengalaman web yang cepat dan mudah dipelihara.",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mengubah kebutuhan produk menjadi antarmuka yang responsif.",
+      "Donec vitae orci sed dolor tincidunt commodo. Menyusun komponen agar lebih mudah dirawat dan digunakan ulang.",
+    ],
   },
   {
     period: "2022 — 2023",
@@ -41,6 +51,10 @@ export const experience = [
     company: "Personal Practice",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Membangun proyek kecil untuk memahami dasar produk, kode, dan komunikasi.",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Membangun proyek kecil untuk melatih konsistensi dan problem solving.",
+      "Integer at lectus sed lorem posuere tincidunt. Mendokumentasikan proses belajar melalui eksperimen dan catatan teknis.",
+    ],
   },
 ];
 
@@ -85,10 +99,18 @@ export const education = [
     period: "2021 — 2025",
     title: "Bachelor of Placeholder Studies",
     place: "Placeholder University",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mendalami dasar teknologi informasi dan pengembangan perangkat lunak.",
+      "Pellentesque habitant morbi tristique senectus et netus. Menyelesaikan berbagai proyek akademik dan eksplorasi mandiri.",
+    ],
   },
   {
     period: "Ongoing",
     title: "Learning in public",
     place: "Books, courses, and shipped projects",
+    details: [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mengembangkan kemampuan melalui kursus, dokumentasi, dan proyek yang dipublikasikan.",
+      "Integer at lectus sed lorem posuere tincidunt. Menguji pemahaman lewat implementasi nyata.",
+    ],
   },
 ];
