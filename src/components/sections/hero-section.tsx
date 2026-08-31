@@ -9,7 +9,7 @@ export function HeroSection() {
         <h1>
           Hello,
           <br />
-          My name is <span className="hero-name">Muhammad Daffa&apos; Ayyasy</span>.
+          My name is <span className="hero-name">Muhammad Daffa&apos; Ayyasy.</span>
           <br />
           I am a <span className="hero-role">Digital Builder.</span>
         </h1>
@@ -21,9 +21,6 @@ export function HeroSection() {
           ))}
         </div>
         <div className="hero-actions">
-          <a className="download-button" href="#about">
-            Explore my profile <Icon name="arrow" size={17} />
-          </a>
           <a className="download-button resume-button" href={profile.resumeUrl} target="_blank" rel="noreferrer">
             Get CV <Icon name="download" size={17} />
           </a>

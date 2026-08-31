@@ -1,6 +1,6 @@
 "use client";
 
-import { useId, useState, type PointerEvent } from "react";
+import { useEffect, useId, useRef, useState, type PointerEvent } from "react";
 import { Icon } from "@/components/icons";
 
 type ResumeCardProps = {
@@ -24,23 +24,46 @@ export function ResumeCard({
 }: ResumeCardProps) {
   const [isOpen, setIsOpen] = useState(initialOpen);
   const detailsId = useId();
+  const frameRef = useRef(0);
+  const boundsRef = useRef<DOMRect | null>(null);
+
+  useEffect(() => () => {
+    if (frameRef.current) window.cancelAnimationFrame(frameRef.current);
+  }, []);
 
   function updateGlow(event: PointerEvent<HTMLElement>) {
     if (event.pointerType === "touch") return;
 
     const card = event.currentTarget;
-    const bounds = card.getBoundingClientRect();
-    const centerX = bounds.left + bounds.width / 2;
-    const centerY = bounds.top + bounds.height / 2;
-    let angle = Math.atan2(event.clientY - centerY, event.clientX - centerX) * (180 / Math.PI);
-
-    if (angle < 0) angle += 360;
-    card.style.setProperty("--start", `${angle + 90}`);
+    const clientX = event.clientX;
+    const clientY = event.clientY;
+    boundsRef.current ??= card.getBoundingClientRect();
     card.style.setProperty("--active", "1");
+
+    if (frameRef.current) return;
+
+    frameRef.current = window.requestAnimationFrame(() => {
+      const bounds = boundsRef.current;
+      if (!bounds) {
+        frameRef.current = 0;
+        return;
+      }
+
+      const centerX = bounds.left + bounds.width / 2;
+      const centerY = bounds.top + bounds.height / 2;
+      let angle = Math.atan2(clientY - centerY, clientX - centerX) * (180 / Math.PI);
+
+      if (angle < 0) angle += 360;
+      card.style.setProperty("--start", `${angle + 90}`);
+      frameRef.current = 0;
+    });
   }
 
   function resetGlow(event: PointerEvent<HTMLElement>) {
     if (event.pointerType === "touch") return;
+    if (frameRef.current) window.cancelAnimationFrame(frameRef.current);
+    frameRef.current = 0;
+    boundsRef.current = null;
     event.currentTarget.style.setProperty("--active", "0");
   }
 

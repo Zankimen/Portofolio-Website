@@ -619,6 +619,7 @@ ul {
   border-radius: 8px;
   background: var(--purple-deep);
   color: var(--foreground);
+  font-family: var(--font-inter), var(--font-geist-sans), system-ui, sans-serif;
   font-size: clamp(1.25rem, 1.8vw, 1.65rem);
   font-weight: 500;
   letter-spacing: -0.02em;
@@ -655,6 +656,8 @@ ul {
   z-index: 2;
   margin: 0 0 92px;
   padding: 0 20px 25px;
+  content-visibility: auto;
+  contain-intrinsic-size: auto 700px;
 }
 
 .about-section,
@@ -991,10 +994,20 @@ ul {
   mask-composite: intersect;
 }
 
+.experience-lottie-shell,
 .experience-lottie {
   position: relative;
   z-index: 1;
   width: min(100%, 390px);
+}
+
+.experience-lottie-shell {
+  display: grid;
+  min-height: 390px;
+  place-items: center;
+}
+
+.experience-lottie {
   filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.35)) drop-shadow(0 0 35px rgba(94, 106, 210, 0.22));
 }
 
@@ -1878,8 +1891,13 @@ ul {
     order: 1;
   }
 
+  .experience-lottie-shell,
   .experience-lottie {
     width: min(100%, 290px);
+  }
+
+  .experience-lottie-shell {
+    min-height: 290px;
   }
 
   .experience-cards,
@@ -1976,6 +1994,42 @@ ul {
 
   .footer-inner > div {
     margin-top: 16px;
+  }
+}
+
+@media (max-width: 420px) {
+  .floating-nav {
+    gap: 0;
+    padding: 4px;
+  }
+
+  .nav-item {
+    min-width: 36px;
+    min-height: 38px;
+  }
+
+  .terminal-lines {
+    font-size: 0.7rem;
+  }
+
+  .skills-group-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (hover: none), (pointer: coarse) {
+  .ambient-blob {
+    animation: none;
+  }
+
+  .ambient-blob-secondary,
+  .ambient-blob-bottom {
+    display: none;
+  }
+
+  .skills-group,
+  .project-card {
+    backdrop-filter: none;
   }
 }
 
