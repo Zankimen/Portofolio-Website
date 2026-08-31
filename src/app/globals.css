@@ -49,7 +49,7 @@ body {
     radial-gradient(ellipse at 100% 42%, rgba(94, 106, 210, 0.045), transparent 28%),
     var(--background-base);
   color: var(--foreground);
-  font-family: var(--font-inter), var(--font-geist-sans), system-ui, sans-serif;
+  font-family: var(--font-geist-sans), Inter, Arial, sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -250,7 +250,7 @@ ul {
   background: var(--purple-deep);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
   color: var(--foreground);
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   opacity: 0;
   pointer-events: none;
   white-space: nowrap;
@@ -306,8 +306,8 @@ ul {
   margin-bottom: 24px;
   color: var(--text-muted);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -322,35 +322,19 @@ ul {
 
 .hero-portfolio h1 {
   max-width: 720px;
-  background: linear-gradient(to bottom, var(--foreground), rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.7));
-  background-clip: text;
-  color: transparent;
-  font-size: clamp(3rem, 6.6vw, 5.5rem);
-  font-weight: 600;
-  letter-spacing: -0.04em;
-  line-height: 1.02;
+  font-size: clamp(2.35rem, 5.25vw, 4.5rem);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+  line-height: 1.18;
 }
 
 .hero-name {
-  background: linear-gradient(90deg, var(--accent), var(--accent-bright), var(--accent));
-  background-size: 200% auto;
-  background-clip: text;
-  color: transparent;
-  animation: accent-shimmer 7s ease-in-out infinite;
+  color: var(--accent-bright);
 }
 
 .hero-role {
-  background: linear-gradient(90deg, var(--accent), var(--accent-bright), var(--accent));
-  background-size: 200% auto;
-  background-clip: text;
-  color: transparent;
-  animation: accent-shimmer 7s ease-in-out infinite;
+  color: var(--accent-bright);
   text-shadow: 0 0 28px rgba(94, 106, 210, 0.15);
-}
-
-@keyframes accent-shimmer {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
 }
 
 .social-row {
@@ -375,7 +359,7 @@ ul {
   height: 44px;
   place-items: center;
   border-radius: 8px;
-  color: var(--accent);
+  color: var(--purple);
   transition: color 250ms var(--ease), transform 250ms var(--ease), background 250ms var(--ease);
 }
 
@@ -395,7 +379,7 @@ ul {
   border-radius: 8px;
   background: linear-gradient(100deg, rgba(94, 106, 210, 0.18), rgba(104, 114, 217, 0.24));
   color: var(--foreground);
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   font-weight: 600;
   transition: gap 220ms var(--ease), border-color 220ms var(--ease), transform 220ms var(--ease);
 }
@@ -504,7 +488,7 @@ ul {
   bottom: 5px;
   color: var(--text-muted);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
@@ -585,9 +569,7 @@ ul {
   border-radius: 8px;
   background: var(--purple-deep);
   color: var(--foreground);
-  font-size: clamp(1.75rem, 2.8vw, 2.25rem);
-  font-weight: 600;
-  letter-spacing: -0.03em;
+  font-size: 1.2rem;
   line-height: 1.2;
   transition: box-shadow 680ms var(--ease), background-color 680ms var(--ease);
 }
@@ -659,8 +641,8 @@ ul {
 .about-facts dt {
   color: var(--text-muted);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 0.75rem;
-  letter-spacing: 0.12em;
+  font-size: 0.64rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
@@ -673,24 +655,23 @@ ul {
 .section-accent-label {
   margin-bottom: 13px;
   color: var(--accent-bright);
-  font-family: var(--font-geist-mono), monospace;
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
+  font-size: 1.18rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 }
 
 .about-lead {
   color: var(--text-soft);
-  font-size: 1.125rem;
-  line-height: 1.75;
+  font-size: 0.97rem;
+  line-height: 1.8;
 }
 
 .about-body,
 .contact-intro {
   margin-top: 17px;
   color: var(--text-muted);
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.75;
 }
 
@@ -722,13 +703,13 @@ ul {
 
 .stat-item strong {
   color: var(--accent-bright);
-  font-size: 1.875rem;
+  font-size: 1.5rem;
 }
 
 .stat-item span {
   margin-top: 3px;
   color: var(--text-muted);
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   line-height: 1.3;
 }
 
@@ -771,7 +752,7 @@ ul {
 .profile-placeholder p {
   color: var(--text-muted);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 0.75rem;
+  font-size: 0.62rem;
   text-transform: uppercase;
 }
 
@@ -1002,9 +983,9 @@ ul {
   margin: 22px 0 0 70px;
   border: 0;
   background: transparent;
-  color: var(--accent-bright);
+  color: var(--purple-bright);
   cursor: pointer;
-  font-size: 0.875rem;
+  font-size: 0.87rem;
   font-weight: 600;
   text-align: left;
 }
@@ -1062,7 +1043,7 @@ ul {
   place-items: center;
   border-radius: 8px;
   background: rgba(94, 106, 210, 0.11);
-  color: var(--accent);
+  color: var(--purple);
 }
 
 .card-main {
@@ -1078,21 +1059,21 @@ ul {
   border: 1px solid rgba(94, 106, 210, 0.2);
   border-radius: 999px;
   background: rgba(94, 106, 210, 0.08);
-  color: var(--accent-bright);
-  font-family: var(--font-geist-mono), monospace;
-  font-size: 0.75rem;
+  color: var(--accent);
+  font-size: 0.68rem;
 }
 
 .card-main h3 {
   color: var(--text);
-  font-size: clamp(1.25rem, 1.8vw, 1.5rem);
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  text-transform: uppercase;
 }
 
 .card-main h3 small {
-  color: var(--accent-bright);
-  font-size: 0.75rem;
+  color: var(--purple-bright);
+  font-size: 0.68rem;
   font-weight: 400;
   letter-spacing: 0;
   text-transform: none;
@@ -1103,16 +1084,16 @@ ul {
   align-items: center;
   gap: 5px;
   margin-top: 4px;
-  color: var(--foreground-muted);
-  font-size: 0.875rem;
+  color: var(--accent-bright);
+  font-size: 0.82rem;
 }
 
 .card-description {
   margin-top: 12px;
   padding-bottom: 2px;
   color: var(--text-soft);
-  font-size: 0.875rem;
-  line-height: 1.65;
+  font-size: 0.78rem;
+  line-height: 1.7;
 }
 
 .skills-section {
@@ -1209,17 +1190,17 @@ ul {
 
 .skills-group-info h3 {
   color: var(--foreground);
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
 }
 
 .skills-group-info p {
   max-width: 205px;
   margin-top: 8px;
   color: var(--text-muted);
-  font-size: 0.875rem;
-  line-height: 1.6;
+  font-size: 0.78rem;
+  line-height: 1.5;
 }
 
 .skills-group-items {
@@ -1246,7 +1227,7 @@ ul {
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.045);
   color: var(--text-muted);
-  font-size: 0.8125rem;
+  font-size: 0.73rem;
   font-weight: 500;
   text-align: center;
   transition: border-color 300ms var(--ease), background 300ms var(--ease), color 300ms var(--ease), box-shadow 300ms var(--ease), transform 300ms var(--ease);
@@ -1313,7 +1294,7 @@ ul {
 .skill-trait strong {
   overflow: hidden;
   color: var(--text);
-  font-size: 0.8125rem;
+  font-size: 0.75rem;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -1322,7 +1303,7 @@ ul {
   margin-top: 4px;
   overflow: hidden;
   color: var(--text-muted);
-  font-size: 0.75rem;
+  font-size: 0.68rem;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -1393,8 +1374,7 @@ ul {
 
 .preview-content strong {
   color: var(--foreground);
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.18rem;
   letter-spacing: -0.03em;
 }
 
@@ -1417,7 +1397,7 @@ ul {
   background: linear-gradient(100deg, var(--purple-bright), var(--purple));
   box-shadow: 0 4px 12px rgba(94, 106, 210, 0.28);
   color: var(--foreground);
-  font-size: 0.875rem;
+  font-size: 0.76rem;
   font-weight: 600;
   transition: box-shadow 300ms var(--ease);
 }
@@ -1440,16 +1420,14 @@ ul {
 .project-card-body h3 {
   margin-bottom: 10px;
   color: var(--foreground);
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: -0.02em;
+  font-size: 1.05rem;
   text-align: center;
 }
 
 .project-card-body p {
   flex: 1;
   color: var(--text-muted);
-  font-size: 0.875rem;
+  font-size: 0.78rem;
   line-height: 1.7;
   text-align: center;
 }
@@ -1469,7 +1447,7 @@ ul {
   background: rgba(255, 255, 255, 0.045);
   color: var(--text-muted);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 0.75rem;
+  font-size: 0.61rem;
 }
 
 .pagination {
@@ -1541,7 +1519,7 @@ ul {
   gap: 12px;
   margin-top: 15px;
   color: var(--text-soft);
-  font-size: 0.875rem;
+  font-size: 0.85rem;
 }
 
 .contact-detail svg {
@@ -1591,13 +1569,13 @@ ul {
   margin-bottom: 7px;
   color: var(--text-muted);
   font-family: var(--font-geist-mono), monospace;
-  font-size: 0.75rem;
+  font-size: 0.63rem;
 }
 
 .contact-form label {
   margin-top: 7px;
   color: var(--text);
-  font-size: 0.875rem;
+  font-size: 0.82rem;
 }
 
 .contact-form input,
@@ -1663,7 +1641,7 @@ ul {
   width: min(calc(100% - 48px), var(--max-width));
   margin: 0 auto;
   padding: 25px 0 105px;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 
 .footer-inner strong {
@@ -1765,7 +1743,7 @@ ul {
   }
 
   .hero-portfolio h1 {
-    font-size: clamp(2.75rem, 10.3vw, 4.5rem);
+    font-size: clamp(2.35rem, 10.3vw, 4rem);
   }
 
   .hero-portfolio-art {
@@ -1793,7 +1771,7 @@ ul {
 
   .section-title-bar {
     padding: 7px 16px;
-    font-size: clamp(1.5rem, 7vw, 1.9rem);
+    font-size: 1.02rem;
   }
 
   .portfolio-section {
@@ -1830,11 +1808,11 @@ ul {
   }
 
   .stat-item strong {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .stat-item span {
-    font-size: 0.75rem;
+    font-size: 0.61rem;
   }
 
   .section-illustration {
@@ -1912,7 +1890,7 @@ ul {
     width: auto;
     min-height: 102px;
     padding: 11px 5px;
-    font-size: 0.75rem;
+    font-size: 0.65rem;
   }
 
   .skill-traits {
