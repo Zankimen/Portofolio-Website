@@ -8,14 +8,13 @@ export function ExperienceSection() {
       <h2 id="experience-heading" className="sr-only">Experience</h2>
       <div className="section-illustration experience-art" aria-hidden="true">
         <ExperienceAnimation />
-        <div className="illustration-orbit" />
       </div>
       <div className="experience-cards">
         {experience.map((item, index) => (
           <ResumeCard
             key={item.period}
             period={item.period}
-            title={item.role + " (Placeholder)"}
+            title={item.role}
             subtitle={item.company}
             description={item.description}
             details={item.details}

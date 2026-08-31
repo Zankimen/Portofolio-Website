@@ -8,7 +8,7 @@ export function AboutSection() {
       <div className="about-copy">
         <p className="section-accent-label">Who I am?</p>
         <p className="about-lead">{profile.about}</p>
-        <p className="about-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at lectus sed lorem posuere tincidunt. Saya tertarik pada produk digital yang memiliki tujuan jelas, detail yang dipikirkan, dan pengalaman yang terasa ringan digunakan.</p>
+        <p className="about-body">{profile.aboutDetail}</p>
       </div>
       <aside className="about-facts" aria-label="Profile facts">
         <p className="section-accent-label">At a glance</p>

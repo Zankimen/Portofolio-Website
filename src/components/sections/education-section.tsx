@@ -12,7 +12,7 @@ export function EducationSection() {
             period={item.period}
             title={item.title}
             subtitle={item.place}
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proses belajar yang terus berjalan melalui proyek dan eksplorasi."
+            description={item.description}
             details={item.details}
             icon="graduation"
           />

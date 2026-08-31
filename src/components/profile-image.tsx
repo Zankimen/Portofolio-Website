@@ -14,14 +14,14 @@ export function ProfileImage() {
         ) : (
           <Image
             src="/images/profile.jpg"
-            alt="Foto profil Daffa Ayyasy"
+            alt="Foto profil Muhammad Daffa' Ayyasy"
             fill
             sizes="(max-width: 680px) 72vw, 280px"
             onError={() => setImageUnavailable(true)}
           />
         )}
       </div>
-      <p>{imageUnavailable ? "Tambahkan public/images/profile.jpg" : "Muhammad Daffa'Ayyasy"}</p>
+      <p>{imageUnavailable ? "Tambahkan public/images/profile.jpg" : "Muhammad Daffa' Ayyasy"}</p>
     </div>
   );
 }

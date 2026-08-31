@@ -1,21 +1,23 @@
 export const profile = {
-  name: "Daffa Ayyasy",
+  name: "Muhammad Daffa' Ayyasy",
   shortName: "DA",
-  role: "Digital builder & software enthusiast",
-  location: "Jakarta, Indonesia",
-  availability: "Available",
+  role: "Software Engineer",
+  location: "Yogyakarta, Indonesia",
+  availability: "Fresh Graduate",
   email: "mayyas.md4@gmail.com",
+  phone: "+62 821-3450-1114",
+  phoneHref: "tel:+6282134501114",
   resumeUrl: "/cv/daffa-ayyasy-cv.pdf",
-  focus: "Web development and digital products",
-  intro:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Saya merancang pengalaman digital yang tenang, jelas, dan terasa berguna.",
+  focus: "Back-end development, cloud, and AI/ML",
   about:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at lectus sed lorem posuere tincidunt. Saya menikmati proses mengubah ide yang masih kabur menjadi produk yang bisa dipahami dan digunakan.",
+    "Lulusan Informatika dari Universitas Sebelas Maret dengan minat pada pengembangan perangkat lunak dan kecerdasan buatan.",
+  aboutDetail:
+    "Berpengalaman membangun fitur back-end pada sistem manajemen proyek berbasis Laravel serta aplikasi Node.js dan cloud. Terbiasa bekerja dalam tim menggunakan Git, menerapkan Repository dan Service Layer, serta mengintegrasikan machine learning ke dalam produk perangkat lunak.",
 };
 
 export const socialLinks = [
   { label: "GitHub", icon: "github", href: "https://github.com/Zankimen" },
-  { label: "LinkedIn", icon: "linkedin", href: "https://www.linkedin.com/in/muhammad-daffa-ayyasy-a72b86329" },
+  { label: "LinkedIn", icon: "linkedin", href: "https://www.linkedin.com/in/muhammaddaffa-ayyasy-a72b86329" },
   { label: "Instagram", icon: "instagram", href: "https://www.instagram.com/zankimen/" },
 ] as const;
 
@@ -31,108 +33,102 @@ export const navigation = [
 
 export const experience = [
   {
-    period: "2024 — Sekarang",
-    role: "Software Developer",
-    company: "Placeholder Studio",
+    period: "Sep — Des 2025",
+    role: "Back End Developer",
+    company: "Indarchi Architect Team — PKBM d'VASTU",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mengembangkan antarmuka dan alur produk dengan perhatian pada detail kecil.",
+      "Mengembangkan modul manajemen pekerja pada sistem manajemen proyek berbasis Laravel dengan frontend React dan Inertia.js di Klaten, Jawa Tengah.",
     details: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mengevaluasi kebutuhan dan merapikan masalah menjadi langkah kerja yang jelas.",
-      "Integer at lectus sed lorem posuere tincidunt. Berkolaborasi dengan tim untuk membangun pengalaman digital yang lebih terarah.",
-      "Pellentesque habitant morbi tristique senectus et netus. Menjaga kualitas implementasi melalui review dan iterasi.",
+      "Membangun fitur CRUD, penugasan pekerja ke proyek, serta pengelolaan role dan posisi pekerja pada setiap proyek.",
+      "Mengimplementasikan presensi yang terintegrasi dengan halaman detail proyek, termasuk unggah dan tampilan foto profil pekerja.",
+      "Menerapkan Repository Pattern, Service Layer, dan Form Request untuk memisahkan logika bisnis serta memvalidasi input.",
+      "Berkolaborasi menggunakan Git dengan alur branching per anggota serta proses code review dan merge.",
     ],
   },
   {
-    period: "2023 — 2024",
-    role: "Frontend Developer",
-    company: "Example Works",
+    period: "Sep 2024 — Jan 2025",
+    role: "Back-End Cohort — HealLink Capstone",
+    company: "Bangkit Academy led by Google, Tokopedia, Gojek & Traveloka",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Berkolaborasi dengan tim untuk membuat pengalaman web yang cepat dan mudah dipelihara.",
+      "Mengembangkan back-end aplikasi prediksi kesehatan bersama tim lintas fungsi menggunakan Node.js, Hapi.js, machine learning, dan layanan Google Cloud.",
     details: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mengubah kebutuhan produk menjadi antarmuka yang responsif.",
-      "Donec vitae orci sed dolor tincidunt commodo. Menyusun komponen agar lebih mudah dirawat dan digunakan ulang.",
-    ],
-  },
-  {
-    period: "2022 — 2023",
-    role: "Independent Learner",
-    company: "Personal Practice",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Membangun proyek kecil untuk memahami dasar produk, kode, dan komunikasi.",
-    details: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Membangun proyek kecil untuk melatih konsistensi dan problem solving.",
-      "Integer at lectus sed lorem posuere tincidunt. Mendokumentasikan proses belajar melalui eksperimen dan catatan teknis.",
+      "Membangun RESTful API autentikasi register dan login dengan bcrypt untuk keamanan password.",
+      "Mengintegrasikan inference model TensorFlow.js ke API prediksi kesehatan dan menyimpan riwayat prediksi di Google Cloud Firestore.",
+      "Melakukan deployment layanan back-end menggunakan Docker di Google Cloud Platform.",
+      "Menyelesaikan pembelajaran terstruktur Web Basic, JavaScript Basic, Back-End Basic, dan Cloud Engineer.",
     ],
   },
 ];
 
 export const skillGroups = [
   {
-    title: "Frontend",
-    description: "Building responsive and interactive user interfaces",
-    items: ["HTML", "CSS", "JavaScript", "TypeScript", "React", "Next.js"],
+    title: "Languages & Frameworks",
+    description: "Teknologi utama untuk membangun aplikasi web dan layanan back-end",
+    items: ["PHP", "Laravel", "JavaScript", "Node.js", "Hapi.js", "React", "Inertia.js"],
   },
   {
-    title: "Backend",
-    description: "Building robust server-side applications and APIs",
-    items: ["Node.js", "REST API", "API design", "Server logic", "TypeScript"],
+    title: "Cloud & Database",
+    description: "Deployment, containerization, dan penyimpanan data aplikasi",
+    items: ["Google Cloud", "Cloud Run", "Cloud Firestore", "MySQL", "Docker"],
   },
   {
-    title: "Data & Caching",
-    description: "Storing, managing and caching application data",
-    items: ["SQL basics", "Data modeling", "JSON", "Caching concepts"],
+    title: "AI & Machine Learning",
+    description: "Fine-tuning, inference, dan optimasi model NLP",
+    items: ["TensorFlow", "TensorFlow.js", "T5", "BART", "Optuna"],
   },
   {
-    title: "DevOps & Tools",
-    description: "Tools and environments for development and deployment",
-    items: ["Git & GitHub", "Figma", "Vercel", "Responsive UI"],
+    title: "Architecture & Tools",
+    description: "Pola arsitektur, desain API, dan kolaborasi pengembangan",
+    items: ["Git", "RESTful API Design", "Repository Pattern", "Service Layer", "Form Request"],
   },
 ] as const;
 
 export const projects = [
   {
     number: "01",
-    title: "Project Placeholder One",
-    type: "Web experience",
+    title: "Peringkasan Otomatis Ulasan Film",
+    type: "Tugas Akhir · 2025—Sekarang · NLP",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sebuah studi kasus untuk menunjukkan cara saya merapikan masalah, struktur konten, dan interaksi.",
-    stack: ["Next.js", "TypeScript", "CSS"],
+      "Mengembangkan abstractive summarization untuk lebih dari 900.000 ulasan IMDb melalui fine-tuning T5-Base dan BART-Base, optimasi Optuna TPE, serta perbandingan strategi pelatihan berdasarkan sentimen.",
+    stack: ["TensorFlow", "T5", "BART", "Optuna", "IMDb"],
   },
   {
     number: "02",
-    title: "Project Placeholder Two",
-    type: "Product interface",
+    title: "HealLink Health Prediction API",
+    type: "Bangkit Academy Capstone",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eksplorasi tentang bagaimana informasi yang kompleks dapat dibuat lebih mudah dipindai.",
-    stack: ["React", "Figma", "API"],
+      "RESTful API untuk autentikasi dan prediksi kesehatan, mengintegrasikan TensorFlow.js dengan Firestore serta dideploy menggunakan Docker di Google Cloud Platform.",
+    stack: ["Node.js", "Hapi.js", "TensorFlow.js", "Firestore", "Docker"],
   },
   {
     number: "03",
-    title: "Project Placeholder Three",
-    type: "Learning project",
+    title: "Modul Manajemen Pekerja",
+    type: "Project Management System",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proyek latihan untuk menguji pendekatan teknis dan membangun kebiasaan kerja yang lebih baik.",
-    stack: ["JavaScript", "Git", "Responsive UI"],
+      "Modul Laravel untuk CRUD pekerja, penugasan dan role per proyek, presensi, serta foto profil dengan pemisahan logika melalui Repository dan Service Layer.",
+    stack: ["Laravel", "React", "Inertia.js", "MySQL", "Git"],
   },
 ];
 
 export const education = [
   {
-    period: "2021 — 2025",
-    title: "Bachelor of Placeholder Studies",
-    place: "Placeholder University",
+    period: "2022 — 2026",
+    title: "S1 Informatika",
+    place: "Universitas Sebelas Maret",
+    description: "Pendidikan sarjana Informatika dengan fokus pada pengembangan perangkat lunak dan kecerdasan buatan.",
     details: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mendalami dasar teknologi informasi dan pengembangan perangkat lunak.",
-      "Pellentesque habitant morbi tristique senectus et netus. Menyelesaikan berbagai proyek akademik dan eksplorasi mandiri.",
+      "Mengerjakan tugas akhir mengenai peringkasan otomatis ulasan film menggunakan fine-tuning model T5-Base dan BART-Base.",
+      "Mengeksplorasi optimasi hyperparameter serta perbandingan strategi pelatihan berdasarkan sentimen ulasan.",
     ],
   },
   {
-    period: "Ongoing",
-    title: "Learning in public",
-    place: "Books, courses, and shipped projects",
+    period: "Certifications",
+    title: "Google Cloud & Cloud Run",
+    place: "Google Cloud · Dicoding · Bangkit Academy",
+    description: "Sertifikasi dan pembelajaran terstruktur mengenai pengembangan aplikasi serta cloud engineering.",
     details: [
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mengembangkan kemampuan melalui kursus, dokumentasi, dan proyek yang dipublikasikan.",
-      "Integer at lectus sed lorem posuere tincidunt. Menguji pemahaman lewat implementasi nyata.",
+      "Application Development with Cloud Run — Google Cloud.",
+      "Menjadi Google Cloud Engineer — Dicoding dan Bangkit Academy.",
     ],
   },
 ];

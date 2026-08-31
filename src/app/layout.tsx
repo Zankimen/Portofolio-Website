@@ -20,17 +20,17 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://daffaayyasy.com"),
   title: {
-    default: "Daffa Ayyasy — Portfolio",
-    template: "%s — Daffa Ayyasy",
+    default: "Muhammad Daffa' Ayyasy — Software Engineer",
+    template: "%s — Muhammad Daffa' Ayyasy",
   },
   description:
-    "Portfolio placeholder Daffa Ayyasy. Selected work, experience, and notes from a digital builder.",
+    "Portfolio Muhammad Daffa' Ayyasy, Software Engineer dengan fokus pada back-end development, cloud, dan AI/ML.",
   alternates: { canonical: "/" },
   openGraph: {
-    title: "Daffa Ayyasy — Portfolio",
-    description: "Selected work, experience, and notes from Daffa Ayyasy.",
+    title: "Muhammad Daffa' Ayyasy — Software Engineer",
+    description: "Pengalaman, proyek, dan keahlian Muhammad Daffa' Ayyasy dalam back-end development, cloud, dan AI/ML.",
     url: "https://daffaayyasy.com",
-    siteName: "Daffa Ayyasy",
+    siteName: "Muhammad Daffa' Ayyasy",
     type: "website",
   },
 };
@@ -39,7 +39,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${inter.variable} ${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="id" className={`${inter.variable} ${geistSans.variable} ${geistMono.variable}`}>
       <body>{children}</body>
     </html>
   );

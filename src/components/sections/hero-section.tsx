@@ -9,9 +9,9 @@ export function HeroSection() {
         <h1>
           Hello,
           <br />
-          My name is <span className="hero-name">Muhammad Daffa&apos; Ayyasy.</span>
+          My name is <span className="hero-name">{profile.name}.</span>
           <br />
-          I am a <span className="hero-role">Digital Builder.</span>
+          I am a <span className="hero-role">{profile.role}.</span>
         </h1>
         <div className="social-row hero-socials">
           {socialLinks.map((social) => (
@@ -27,17 +27,17 @@ export function HeroSection() {
         </div>
       </div>
       <div className="hero-portfolio-art">
-        <div className="hero-terminal" role="img" aria-label="Animated Daffa code editor">
+        <div className="hero-terminal" role="img" aria-label="Animated software engineer profile">
           <div className="terminal-header">
             <div className="terminal-dots"><i /><i /><i /></div>
             <span className="terminal-file">daffa.ts</span>
           </div>
           <div className="terminal-lines" aria-hidden="true">
             <span className="code-line code-line-1"><b>const</b> daffa = {"{"}</span>
-            <span className="code-line code-line-2 indent">name: <em>&quot;Daffa Ayyasy&quot;</em>,</span>
-            <span className="code-line code-line-3 indent">focus: <em>&quot;digital products&quot;</em>,</span>
-            <span className="code-line code-line-4 indent">stack: <em>[&quot;Next.js&quot;, &quot;TypeScript&quot;]</em>,</span>
-            <span className="code-line code-line-5 indent">available: <em>true</em>,</span>
+            <span className="code-line code-line-2 indent">role: <em>&quot;Software Engineer&quot;</em>,</span>
+            <span className="code-line code-line-3 indent">focus: <em>&quot;backend, cloud, AI/ML&quot;</em>,</span>
+            <span className="code-line code-line-4 indent">stack: <em>[&quot;Laravel&quot;, &quot;Node.js&quot;]</em>,</span>
+            <span className="code-line code-line-5 indent">freshGraduate: <em>true</em>,</span>
             <span className="code-line code-line-6">{"}"}</span>
           </div>
           <div className="terminal-cursor" aria-hidden="true" />
