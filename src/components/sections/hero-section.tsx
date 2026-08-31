@@ -29,18 +29,21 @@ export function HeroSection() {
           </a>
         </div>
       </div>
-      <div className="hero-portfolio-art" aria-label="Decorative code illustration">
-        <div className="hero-glow-ring hero-glow-ring-one" />
-        <div className="hero-glow-ring hero-glow-ring-two" />
-        <div className="hero-terminal">
-          <div className="terminal-dots"><i /><i /><i /></div>
-          <div className="terminal-lines">
-            <span><b>const</b> daffa = {"{"}</span>
-            <span className="indent">focus: <em>&quot;useful work&quot;</em>,</span>
-            <span className="indent">stack: <em>&quot;modern web&quot;</em>,</span>
-            <span>{"}"}</span>
+      <div className="hero-portfolio-art">
+        <div className="hero-terminal" role="img" aria-label="Animated Daffa code editor">
+          <div className="terminal-header">
+            <div className="terminal-dots"><i /><i /><i /></div>
+            <span className="terminal-file">daffa.ts</span>
           </div>
-          <div className="terminal-cursor" />
+          <div className="terminal-lines" aria-hidden="true">
+            <span className="code-line code-line-1"><b>const</b> daffa = {"{"}</span>
+            <span className="code-line code-line-2 indent">name: <em>&quot;Daffa Ayyasy&quot;</em>,</span>
+            <span className="code-line code-line-3 indent">focus: <em>&quot;digital products&quot;</em>,</span>
+            <span className="code-line code-line-4 indent">stack: <em>[&quot;Next.js&quot;, &quot;TypeScript&quot;]</em>,</span>
+            <span className="code-line code-line-5 indent">available: <em>true</em>,</span>
+            <span className="code-line code-line-6">{"}"}</span>
+          </div>
+          <div className="terminal-cursor" aria-hidden="true" />
         </div>
       </div>
     </section>
