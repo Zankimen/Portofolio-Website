@@ -4,7 +4,7 @@ export const profile = {
   role: "Digital builder & software enthusiast",
   location: "Jakarta, Indonesia",
   availability: "Available",
-  email: "hello@daffaayyasy.com",
+  email: "mayyas.md4@gmail.com",
   resumeUrl: "/cv/daffa-ayyasy-cv.pdf",
   focus: "Web development and digital products",
   intro:

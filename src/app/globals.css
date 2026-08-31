@@ -673,6 +673,10 @@ ul {
   padding-top: 20px;
 }
 
+.education-section {
+  display: block;
+}
+
 .about-facts {
   padding-left: 24px;
   border-left: 1px solid var(--line);
@@ -995,17 +999,6 @@ ul {
 }
 
 .experience-lottie > div {
-  width: 100% !important;
-}
-
-.education-lottie {
-  position: relative;
-  z-index: 1;
-  width: min(100%, 390px);
-  filter: drop-shadow(0 18px 28px rgba(0, 0, 0, 0.35)) drop-shadow(0 0 35px rgba(94, 106, 210, 0.22));
-}
-
-.education-lottie > div {
   width: 100% !important;
 }
 
@@ -1543,10 +1536,6 @@ ul {
   font-size: 0.8rem;
 }
 
-.education-art {
-  min-height: 400px;
-}
-
 .education-cap {
   position: relative;
   z-index: 1;
@@ -1560,15 +1549,6 @@ ul {
   box-shadow: 0 0 60px rgba(94, 106, 210, 0.22);
   color: var(--purple-bright);
 }
-
-.education-star {
-  position: absolute;
-  color: var(--accent);
-  text-shadow: 0 0 17px rgba(94, 106, 210, 0.5);
-}
-
-.star-one { top: 28%; right: 19%; font-size: 1.6rem; }
-.star-two { bottom: 23%; left: 18%; color: var(--purple-bright); font-size: 1.1rem; }
 
 .contact-section {
   align-items: start;
@@ -1899,10 +1879,6 @@ ul {
   }
 
   .experience-lottie {
-    width: min(100%, 290px);
-  }
-
-  .education-lottie {
     width: min(100%, 290px);
   }
 
