@@ -2,12 +2,7 @@ import { Icon } from "@/components/icons";
 import { skillGroups } from "@/content/portfolio";
 
 const skillIcons = ["monitor", "server", "database", "code"] as const;
-const skillTraits = [
-  { title: "Always Learning", description: "Exploring new technologies", icon: "layers" as const },
-  { title: "Problem Solver", description: "Building efficient solutions", icon: "server" as const },
-  { title: "Clean Code", description: "Writing maintainable code", icon: "code" as const },
-  { title: "Performance First", description: "Optimizing for scalability", icon: "arrow" as const },
-];
+
 
 export function SkillsSection() {
   return (
@@ -38,12 +33,6 @@ export function SkillsSection() {
         ))}
       </div>
       <div className="skill-traits">
-        {skillTraits.map((trait) => (
-          <div className="skill-trait" key={trait.title}>
-            <span className="skill-trait-icon"><Icon name={trait.icon} size={18} /></span>
-            <span><strong>{trait.title}</strong><small>{trait.description}</small></span>
-          </div>
-        ))}
       </div>
     </section>
   );
