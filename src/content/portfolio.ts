@@ -6,11 +6,18 @@ export const profile = {
   availability: "Available",
   email: "hello@daffaayyasy.com",
   resumeUrl: "/cv/daffa-ayyasy-cv.pdf",
+  focus: "Web development and digital products",
   intro:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Saya merancang pengalaman digital yang tenang, jelas, dan terasa berguna.",
   about:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at lectus sed lorem posuere tincidunt. Saya menikmati proses mengubah ide yang masih kabur menjadi produk yang bisa dipahami dan digunakan.",
 };
+
+export const socialLinks = [
+  { label: "GitHub", icon: "github", href: "https://github.com/Zankimen" },
+  { label: "LinkedIn", icon: "linkedin", href: "https://www.linkedin.com/in/muhammad-daffa-ayyasy-a72b86329" },
+  { label: "Instagram", icon: "instagram", href: "https://www.instagram.com/zankimen/" },
+] as const;
 
 export const navigation = [
   { label: "Home", href: "#home", icon: "home" },
