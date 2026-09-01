@@ -1,7 +1,46 @@
+import Image from "next/image";
 import { Icon } from "@/components/icons";
 import { skillGroups } from "@/content/portfolio";
 
 const skillIcons = ["monitor", "server", "database", "code"] as const;
+
+const brandLogoBySkill: Record<string, string> = {
+  PHP: "php",
+  Laravel: "laravel",
+  JavaScript: "javascript",
+  "Node.js": "node-js",
+  React: "react",
+  "Inertia.js": "inertia",
+  "Hapi.js": "hapi",
+  "Google Cloud Platform": "google-cloud",
+  "Cloud Run": "google-cloud",
+  "Google Cloud Firestore": "google-cloud",
+  MySQL: "mysql",
+  Docker: "docker",
+  TensorFlow: "tensorflow",
+  "TensorFlow.js": "tensorflow",
+  Optuna: "optuna",
+  Git: "git",
+};
+
+const fallbackIconBySkill: Record<string, "code" | "layers" | "server"> = {
+  T5: "layers",
+  BART: "layers",
+  "RESTful API Design": "server",
+  "Repository Pattern": "layers",
+  "Service Layer": "layers",
+  "Form Request": "code",
+};
+
+function SkillLogo({ name }: { name: string }) {
+  const logo = brandLogoBySkill[name];
+
+  if (logo) {
+    return <Image src={`/skills/${logo}.svg`} alt="" width={34} height={34} className="skill-logo" />;
+  }
+
+  return <Icon name={fallbackIconBySkill[name] ?? "code"} size={30} />;
+}
 
 
 export function SkillsSection() {
@@ -23,7 +62,7 @@ export function SkillsSection() {
               {group.items.map((item, itemIndex) => (
                 <div className="skill-chip" key={item}>
                   <span className={"skill-chip-icon skill-tone-" + ((groupIndex + itemIndex) % skillIcons.length)}>
-                    <Icon name={skillIcons[(groupIndex + itemIndex) % skillIcons.length]} size={30} />
+                    <SkillLogo name={item} />
                   </span>
                   <span>{item}</span>
                 </div>

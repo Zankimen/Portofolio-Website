@@ -1294,8 +1294,18 @@ ul {
 }
 
 .skill-chip-icon {
+  display: grid;
+  min-height: 34px;
+  place-items: center;
   color: var(--purple-bright);
   transition: transform 300ms var(--ease), color 300ms var(--ease);
+}
+
+.skill-logo {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.22));
 }
 
 .skill-tone-1 { color: var(--accent); }
