@@ -18,7 +18,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://daffaayyasy.com"),
+  metadataBase: new URL("https://daffaayyasy.online"),
   title: {
     default: "Muhammad Daffa' Ayyasy — Software Engineer",
     template: "%s — Muhammad Daffa' Ayyasy",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Muhammad Daffa' Ayyasy — Software Engineer",
     description: "Experience, projects, and technical skills in backend development, cloud platforms, and applied AI/ML.",
-    url: "https://daffaayyasy.com",
+    url: "https://daffaayyasy.online",
     siteName: "Muhammad Daffa' Ayyasy",
     type: "website",
   },
