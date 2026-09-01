@@ -82,24 +82,28 @@ export function ResumeCard({
             <span className="date-pill">{period}</span>
             <h3>{title}</h3>
             <p className="company-link">{subtitle}</p>
-            <p className="card-description">{description}</p>
+            {description && <p className="card-description">{description}</p>}
           </div>
         </div>
-        <button
-          className="details-toggle"
-          type="button"
-          aria-controls={detailsId}
-          aria-expanded={isOpen}
-          onClick={() => setIsOpen((current) => !current)}
-        >
-          <Icon name="arrow" size={16} />
-          <span>{isOpen ? "Hide details" : "Show " + details.length + " key highlights"}</span>
-        </button>
-        <div className="resume-card-details" id={detailsId} hidden={!isOpen}>
-          <ul>
-            {details.map((detail) => <li key={detail}>{detail}</li>)}
-          </ul>
-        </div>
+        {details.length > 0 && (
+          <>
+            <button
+              className="details-toggle"
+              type="button"
+              aria-controls={detailsId}
+              aria-expanded={isOpen}
+              onClick={() => setIsOpen((current) => !current)}
+            >
+              <Icon name="arrow" size={16} />
+              <span>{isOpen ? "Hide details" : "Show " + details.length + " key highlights"}</span>
+            </button>
+            <div className="resume-card-details" id={detailsId} hidden={!isOpen}>
+              <ul>
+                {details.map((detail) => <li key={detail}>{detail}</li>)}
+              </ul>
+            </div>
+          </>
+        )}
       </article>
     </div>
   );

@@ -29,7 +29,6 @@ export function ContactForm({ email }: ContactFormProps) {
       encType="text/plain"
       onSubmit={openEmailDraft}
     >
-      <p className="form-note">Opens your email app. Review the message there, then press Send.</p>
       <label htmlFor="contact-name">Your Name</label>
       <input id="contact-name" name="name" maxLength={100} required type="text" autoComplete="name" />
       <label htmlFor="contact-email">Your Email</label>

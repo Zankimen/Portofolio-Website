@@ -32,55 +32,55 @@ def make_styles():
     return {
         "name": ParagraphStyle(
             "CVName", parent=styles["Normal"], fontName="Helvetica-Bold",
-            fontSize=22, leading=24, alignment=TA_CENTER, textColor=colors.HexColor("#111111"),
-            spaceAfter=3,
+            fontSize=20, leading=22, alignment=TA_CENTER, textColor=colors.HexColor("#111111"),
+            spaceAfter=2,
         ),
         "headline": ParagraphStyle(
             "CVHeadline", parent=styles["Normal"], fontName="Helvetica",
-            fontSize=9.4, leading=12, alignment=TA_CENTER, textColor=colors.HexColor("#444444"),
-            spaceAfter=4,
+            fontSize=9, leading=10.5, alignment=TA_CENTER, textColor=colors.HexColor("#444444"),
+            spaceAfter=2,
         ),
         "contact": ParagraphStyle(
             "CVContact", parent=styles["Normal"], fontName="Helvetica",
-            fontSize=8.2, leading=11, alignment=TA_CENTER, textColor=colors.HexColor("#333333"),
-            spaceAfter=10,
+            fontSize=7.8, leading=9.5, alignment=TA_CENTER, textColor=colors.HexColor("#333333"),
+            spaceAfter=6,
         ),
         "section": ParagraphStyle(
             "CVSection", parent=styles["Normal"], fontName="Helvetica-Bold",
-            fontSize=8.7, leading=11, textColor=colors.HexColor("#111111"),
-            spaceBefore=10, spaceAfter=4,
+            fontSize=8.2, leading=9.5, textColor=colors.HexColor("#111111"),
+            spaceBefore=6, spaceAfter=3,
         ),
         "body": ParagraphStyle(
             "CVBody", parent=styles["Normal"], fontName="Helvetica",
-            fontSize=8.45, leading=11.4, textColor=colors.HexColor("#202020"),
-            spaceAfter=4,
+            fontSize=7.9, leading=9.8, textColor=colors.HexColor("#202020"),
+            spaceAfter=2,
         ),
         "skill": ParagraphStyle(
             "CVSkill", parent=styles["Normal"], fontName="Helvetica",
-            fontSize=8.35, leading=11, textColor=colors.HexColor("#202020"),
-            spaceAfter=2,
+            fontSize=7.8, leading=9.4, textColor=colors.HexColor("#202020"),
+            spaceAfter=1,
         ),
         "entry-title": ParagraphStyle(
             "CVEntryTitle", parent=styles["Normal"], fontName="Helvetica-Bold",
-            fontSize=9, leading=11.5, textColor=colors.HexColor("#111111"),
+            fontSize=8.6, leading=10.2, textColor=colors.HexColor("#111111"),
         ),
         "entry-meta": ParagraphStyle(
             "CVEntryMeta", parent=styles["Normal"], fontName="Helvetica",
-            fontSize=8.2, leading=10.5, textColor=colors.HexColor("#444444"),
+            fontSize=7.8, leading=9.2, textColor=colors.HexColor("#444444"),
         ),
         "date": ParagraphStyle(
             "CVDate", parent=styles["Normal"], fontName="Helvetica",
-            fontSize=8.2, leading=10.5, alignment=TA_RIGHT, textColor=colors.HexColor("#444444"),
+            fontSize=7.8, leading=9.2, alignment=TA_RIGHT, textColor=colors.HexColor("#444444"),
         ),
         "bullet": ParagraphStyle(
             "CVBullet", parent=styles["Normal"], fontName="Helvetica",
-            fontSize=8.25, leading=11.2, leftIndent=10, firstLineIndent=-7,
-            textColor=colors.HexColor("#202020"), spaceAfter=2.5,
+            fontSize=7.75, leading=9.4, leftIndent=10, firstLineIndent=-7,
+            textColor=colors.HexColor("#202020"), spaceAfter=1.2,
         ),
         "cert": ParagraphStyle(
             "CVCert", parent=styles["Normal"], fontName="Helvetica",
-            fontSize=8.4, leading=11.2, leftIndent=10, firstLineIndent=-7,
-            textColor=colors.HexColor("#202020"), spaceAfter=3,
+            fontSize=7.8, leading=9.4, leftIndent=10, firstLineIndent=-7,
+            textColor=colors.HexColor("#202020"), spaceAfter=1.5,
         ),
         "footer": ParagraphStyle(
             "CVFooter", parent=styles["Normal"], fontName="Helvetica",
@@ -96,12 +96,12 @@ def section_heading(title: str, styles):
     ]
 
 
-def entry_header(title: str, organization: str, location: str, period: str, styles):
+def entry_header(title: str, organization: str, location: str, period: str, styles, gpa: str = ""):
     left = [
         Paragraph(text(title), styles["entry-title"]),
-        Paragraph(text(organization + (f" · {location}" if location else "")), styles["entry-meta"]),
+        Paragraph(text(organization + (f" · {location}" if location else "") + (f" · GPA: {gpa}" if gpa else "")), styles["entry-meta"]),
     ]
-    table = Table([[left, Paragraph(text(period), styles["date"])]], colWidths=[142 * mm, 32 * mm])
+    table = Table([[left, Paragraph(text(period), styles["date"])]], colWidths=[146 * mm, 32 * mm])
     table.setStyle(TableStyle([
         ("VALIGN", (0, 0), (-1, -1), "TOP"),
         ("LEFTPADDING", (0, 0), (-1, -1), 0),
@@ -137,9 +137,8 @@ def build_story(locale_data, locale, styles):
     summary_title = "Summary" if locale == "en" else "Ringkasan"
     skills_title = "Technical Skills" if locale == "en" else "Keahlian Teknis"
     experience_title = "Work Experience" if locale == "en" else "Pengalaman Kerja"
-    projects_title = "Selected Projects" if locale == "en" else "Proyek Pilihan"
+    projects_title = "Projects" if locale == "en" else "Proyek"
     education_title = "Education" if locale == "en" else "Pendidikan"
-    training_title = "Professional Training" if locale == "en" else "Pelatihan Profesional"
     certification_title = "Certifications" if locale == "en" else "Sertifikasi"
 
     story += section_heading(summary_title, styles)
@@ -155,8 +154,8 @@ def build_story(locale_data, locale, styles):
             entry_header(item["role"], item["company"], item["location"], item["period"], styles),
             Spacer(1, 3),
             Paragraph(text(item["description"]), styles["body"]),
-            *bullet_list(item["details"], styles),
-            Spacer(1, 5),
+            *bullet_list(item["details"][:3], styles),
+            Spacer(1, 3),
         ]))
 
     story += section_heading(projects_title, styles)
@@ -164,31 +163,17 @@ def build_story(locale_data, locale, styles):
         story.append(KeepTogether([
             entry_header(item["title"], item["type"], ", ".join(item["stack"]), "", styles),
             Spacer(1, 3),
-            Paragraph(text(item["description"]), styles["body"]),
-            Spacer(1, 4),
+            *bullet_list(item.get("details", []), styles),
+            Spacer(1, 3),
         ]))
 
     education_heading = section_heading(education_title, styles)
     for index, item in enumerate(locale_data["education"]):
         block = [
-            entry_header(item["title"], item["place"], item["location"], item["period"], styles),
-            Spacer(1, 3),
-            Paragraph(text(item["description"]), styles["body"]),
-            *bullet_list(item["details"], styles),
-            Spacer(1, 5),
+            entry_header(item["title"], item["place"], item["location"], item["period"], styles, item.get("gpa", "")),
+            Spacer(1, 4),
         ]
         story.append(KeepTogether(education_heading + block) if index == 0 else KeepTogether(block))
-
-    training_heading = section_heading(training_title, styles)
-    for index, item in enumerate(locale_data["training"]):
-        block = [
-            entry_header(item["title"], item["place"], item["location"], item["period"], styles),
-            Spacer(1, 3),
-            Paragraph(text(item["description"]), styles["body"]),
-            *bullet_list(item["details"], styles),
-            Spacer(1, 5),
-        ]
-        story.append(KeepTogether(training_heading + block) if index == 0 else KeepTogether(block))
 
     story += section_heading(certification_title, styles)
     for item in locale_data["certifications"]:
@@ -212,8 +197,8 @@ def generate(locale, filename, data):
     styles = make_styles()
     document = SimpleDocTemplate(
         str(OUTPUT_DIR / filename), pagesize=A4,
-        leftMargin=18 * mm, rightMargin=18 * mm,
-        topMargin=15 * mm, bottomMargin=18 * mm,
+        leftMargin=16 * mm, rightMargin=16 * mm,
+        topMargin=11 * mm, bottomMargin=15 * mm,
         title=f"Muhammad Daffa' Ayyasy — CV ({locale.upper()})",
         author="Muhammad Daffa' Ayyasy",
     )
@@ -224,5 +209,3 @@ if __name__ == "__main__":
     content = json.loads(DATA_PATH.read_text(encoding="utf-8"))
     generate("en", "daffa-ayyasy-cv-en.pdf", content["en"])
     generate("id", "daffa-ayyasy-cv-id.pdf", content["id"])
-    # Keep the original public path working for existing bookmarks and deployments.
-    generate("en", "daffa-ayyasy-cv.pdf", content["en"])

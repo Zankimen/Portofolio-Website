@@ -6,8 +6,6 @@ export function Footer() {
       <div className="footer-inner">
         <p>© 2026 <strong>{profile.name}</strong></p>
         <div>
-          <a href={profile.resumeUrl} target="_blank" rel="noreferrer">English CV</a>
-          <span>|</span>
           <a href={profile.resumeIdUrl} target="_blank" rel="noreferrer">CV Indonesia</a>
           <span>|</span>
           {socialLinks.map((social, index) => (

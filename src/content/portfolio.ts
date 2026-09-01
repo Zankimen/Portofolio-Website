@@ -48,6 +48,8 @@ export type Project = {
   type: string;
   description: string;
   stack: string[];
+  repoUrl: string;
+  details: string[];
 };
 
 export type ResumeEntry = {
@@ -57,6 +59,7 @@ export type ResumeEntry = {
   location: string;
   description: string;
   details: string[];
+  gpa?: string;
 };
 
 export type Certification = {
@@ -70,7 +73,6 @@ export type PortfolioLocaleContent = {
   skills: SkillGroup[];
   projects: Project[];
   education: ResumeEntry[];
-  training: ResumeEntry[];
   certifications: Certification[];
 };
 
@@ -105,5 +107,4 @@ export const experience = websiteContent.experience;
 export const skillGroups = websiteContent.skills;
 export const projects = websiteContent.projects;
 export const education = websiteContent.education;
-export const training = websiteContent.training;
 export const certifications = websiteContent.certifications;

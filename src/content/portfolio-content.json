@@ -52,7 +52,7 @@
       {
         "title": "Languages & Frameworks",
         "description": "Core technologies for web applications and backend services",
-        "items": ["PHP", "Laravel", "JavaScript", "Node.js", "Hapi.js", "React", "Inertia.js"]
+        "items": ["PHP", "Laravel", "JavaScript", "Node.js", "Hapi.js", "React", "Inertia.js", "Python"]
       },
       {
         "title": "Cloud & Databases",
@@ -62,7 +62,7 @@
       {
         "title": "AI & Machine Learning",
         "description": "NLP fine-tuning, inference, and hyperparameter optimization",
-        "items": ["TensorFlow", "TensorFlow.js", "T5", "BART", "Optuna"]
+        "items": ["TensorFlow", "TensorFlow.js", "PyTorch", "Transformers", "T5", "BART", "Optuna", "ROUGE / METEOR"]
       },
       {
         "title": "Architecture & Tools",
@@ -73,50 +73,53 @@
     "projects": [
       {
         "number": "01",
-        "title": "Automatic Film Review Summarization",
+        "title": "Abstractive Film Review Summarization",
         "type": "Undergraduate Thesis · 2025 — Present · NLP",
-        "description": "Developing an abstractive summarization model for more than 900,000 IMDb reviews by fine-tuning T5-Base and BART-Base, optimizing hyperparameters with Optuna TPE, and comparing separate and combined training strategies based on review sentiment.",
-        "stack": ["TensorFlow", "T5", "BART", "Optuna", "IMDb"]
+        "description": "Built a reproducible NLP experimentation pipeline for film-review summarization: review preprocessing, five-review block construction, sentiment-balanced train/validation/test splits, fine-tuning T5-Base, and a BART-Base baseline. Hyperparameters are tuned with Optuna TPE and outputs are evaluated with ROUGE and METEOR.",
+        "stack": ["Python", "PyTorch", "Transformers", "T5", "BART", "Optuna"],
+        "repoUrl": "https://github.com/Zankimen/abstractive-film-review-summarization",
+        "details": [
+          "Designed preprocessing and dataset-validation scripts that group five reviews, enforce helpfulness criteria, and produce balanced sentiment splits.",
+          "Implemented fine-tuning experiments for google-t5/t5-base and a facebook/bart-base baseline across combined and sentiment-separated scenarios.",
+          "Tuned hyperparameters with Optuna TPE and evaluated generated summaries using ROUGE and METEOR metrics."
+        ]
       },
       {
         "number": "02",
-        "title": "HealLink Health Prediction API",
-        "type": "Bangkit Academy · Capstone Project",
-        "description": "Backend API for user authentication and health prediction, integrating TensorFlow.js inference with Google Cloud Firestore and deployed using Docker on Google Cloud Platform.",
-        "stack": ["Node.js", "Hapi.js", "TensorFlow.js", "Firestore", "Docker"]
+        "title": "BookIt Event Ticketing Platform",
+        "type": "University Project · Full-Stack Web Application",
+        "description": "Contributed to a full-stack event ticketing platform with customer and organizer flows: authentication, event discovery and search, event and ticket-type management, image upload, transactional ticket ordering, Midtrans payment integration, QR ticket generation and verification, and organizer reports.",
+        "stack": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Midtrans", "Docker"],
+        "repoUrl": "https://github.com/Pramudito2004/BookIt",
+        "details": [
+          "Implemented organizer dashboard, reporting-page, sidebar-navigation, and customer-account flow updates across the Next.js application.",
+          "Worked across API routes for authentication, events, orders, ticket verification, profiles, and uploads using Prisma and PostgreSQL.",
+          "Contributed to ticketing flows involving transactional orders, Midtrans payments, QR tickets, and Docker configuration."
+        ]
       },
       {
         "number": "03",
-        "title": "Worker Management Module",
-        "type": "Project Management System · Professional Experience",
-        "description": "Laravel module covering worker CRUD, project assignments, project-specific roles, attendance, and profile photos, with business logic organized through Repository and Service Layers.",
-        "stack": ["Laravel", "React", "Inertia.js", "MySQL", "Git"]
+        "title": "Teman Klinik Medicine Recommendation System",
+        "type": "University Project · Semantic Web",
+        "description": "Enhanced a Flask medicine-recommendation application backed by Apache Jena Fuseki and SPARQL. The system matches symptoms to medicines, filters recommendations by patient conditions and allergies, offers herbal alternatives, and warns users about high-urgency symptoms through an ontology-based knowledge graph.",
+        "stack": ["Python", "Flask", "SPARQL", "Apache Jena Fuseki", "RDF / OWL"],
+        "repoUrl": "https://github.com/Pramudito2004/Semantic-Web-Project",
+        "details": [
+          "Refined the Flask interface and input flow for selecting symptoms, patient conditions, and active-ingredient allergies.",
+          "Updated the RDF/OWL knowledge graph data and ontology relationships used by the medicine-recommendation queries.",
+          "Adjusted the SPARQL-backed recommendation flow to support contraindication filtering, herbal alternatives, and high-urgency warnings."
+        ]
       }
     ],
     "education": [
       {
-        "period": "2022 — 2026",
+        "period": "Aug 2022 — July 2026",
         "title": "Bachelor of Informatics",
         "place": "Universitas Sebelas Maret",
-        "location": "",
-        "description": "Undergraduate study in Informatics with an academic focus on software development and artificial intelligence.",
-        "details": [
-          "Undergraduate thesis: automatic film-review summarization using fine-tuned T5-Base and BART-Base models.",
-          "Exploring hyperparameter optimization and training-strategy comparisons based on review sentiment."
-        ]
-      }
-    ],
-    "training": [
-      {
-        "period": "Sep 2024 — Jan 2025",
-        "title": "Back-End Development Path",
-        "place": "Bangkit Academy led by Google, Tokopedia, Gojek & Traveloka",
-        "location": "",
-        "description": "Structured professional training in backend development, cloud engineering, and collaborative capstone delivery.",
-        "details": [
-          "Completed Web Basics, JavaScript Basics, Back-End Basics, and Cloud Engineering learning paths.",
-          "Delivered the HealLink health-prediction capstone as a member of a cross-functional team."
-        ]
+        "location": "Surakarta, Indonesia",
+        "gpa": "3.55/4.00",
+        "description": "",
+        "details": []
       }
     ],
     "certifications": [
@@ -170,7 +173,7 @@
       {
         "title": "Bahasa & Framework",
         "description": "Teknologi utama untuk aplikasi web dan layanan back-end",
-        "items": ["PHP", "Laravel", "JavaScript", "Node.js", "Hapi.js", "React", "Inertia.js"]
+        "items": ["PHP", "Laravel", "JavaScript", "Node.js", "Hapi.js", "React", "Inertia.js", "Python"]
       },
       {
         "title": "Cloud & Database",
@@ -180,7 +183,7 @@
       {
         "title": "AI & Machine Learning",
         "description": "Fine-tuning NLP, inference, dan optimasi hyperparameter",
-        "items": ["TensorFlow", "TensorFlow.js", "T5", "BART", "Optuna"]
+        "items": ["TensorFlow", "TensorFlow.js", "PyTorch", "Transformers", "T5", "BART", "Optuna", "ROUGE / METEOR"]
       },
       {
         "title": "Arsitektur & Tools",
@@ -191,50 +194,53 @@
     "projects": [
       {
         "number": "01",
-        "title": "Peringkasan Otomatis Ulasan Film",
+        "title": "Peringkasan Abstraktif Ulasan Film",
         "type": "Tugas Akhir · 2025 — Sekarang · NLP",
-        "description": "Mengembangkan model abstractive summarization untuk lebih dari 900.000 ulasan IMDb melalui fine-tuning T5-Base dan BART-Base, optimasi hyperparameter dengan Optuna TPE, serta perbandingan strategi pelatihan terpisah dan gabungan berdasarkan sentimen ulasan.",
-        "stack": ["TensorFlow", "T5", "BART", "Optuna", "IMDb"]
+        "description": "Membangun pipeline eksperimen NLP yang reproducible untuk peringkasan ulasan film: preprocessing ulasan, penyusunan blok lima ulasan, pembagian data train/validation/test yang seimbang berdasarkan sentimen, fine-tuning T5-Base, dan baseline BART-Base. Hyperparameter dioptimalkan dengan Optuna TPE dan hasil dievaluasi menggunakan ROUGE serta METEOR.",
+        "stack": ["Python", "PyTorch", "Transformers", "T5", "BART", "Optuna"],
+        "repoUrl": "https://github.com/Zankimen/abstractive-film-review-summarization",
+        "details": [
+          "Merancang script preprocessing dan validasi dataset untuk mengelompokkan lima ulasan, menerapkan kriteria helpfulness, dan menghasilkan split sentimen yang seimbang.",
+          "Mengimplementasikan eksperimen fine-tuning google-t5/t5-base dan baseline facebook/bart-base pada skenario gabungan serta pemisahan sentimen.",
+          "Mengoptimalkan hyperparameter dengan Optuna TPE dan mengevaluasi ringkasan menggunakan metrik ROUGE serta METEOR."
+        ]
       },
       {
         "number": "02",
-        "title": "HealLink Health Prediction API",
-        "type": "Bangkit Academy · Capstone Project",
-        "description": "Back-end API untuk autentikasi pengguna dan prediksi kesehatan, dengan integrasi inference TensorFlow.js, penyimpanan Google Cloud Firestore, serta deployment menggunakan Docker di Google Cloud Platform.",
-        "stack": ["Node.js", "Hapi.js", "TensorFlow.js", "Firestore", "Docker"]
+        "title": "BookIt Event Ticketing Platform",
+        "type": "Project Kuliah · Aplikasi Web Full-Stack",
+        "description": "Berkontribusi pada platform ticketing event full-stack dengan alur customer dan organizer: autentikasi, pencarian event, pengelolaan event dan tipe tiket, unggah gambar, pemesanan tiket transaksional, integrasi pembayaran Midtrans, pembuatan dan verifikasi tiket QR, serta laporan organizer.",
+        "stack": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Midtrans", "Docker"],
+        "repoUrl": "https://github.com/Pramudito2004/BookIt",
+        "details": [
+          "Mengimplementasikan pembaruan dashboard organizer, halaman laporan, navigasi sidebar, dan alur perpindahan akun customer pada aplikasi Next.js.",
+          "Bekerja pada route API untuk autentikasi, event, order, verifikasi tiket, profil, dan upload menggunakan Prisma serta PostgreSQL.",
+          "Berkontribusi pada alur ticketing yang mencakup order transaksional, pembayaran Midtrans, tiket QR, dan konfigurasi Docker."
+        ]
       },
       {
         "number": "03",
-        "title": "Modul Manajemen Pekerja",
-        "type": "Sistem Manajemen Proyek · Pengalaman Profesional",
-        "description": "Modul Laravel yang mencakup CRUD pekerja, penugasan proyek, role per proyek, presensi, dan foto profil, dengan logika bisnis yang diatur melalui Repository dan Service Layer.",
-        "stack": ["Laravel", "React", "Inertia.js", "MySQL", "Git"]
+        "title": "Sistem Rekomendasi Obat Teman Klinik",
+        "type": "Project Kuliah · Semantic Web",
+        "description": "Mengembangkan dan menyempurnakan aplikasi rekomendasi obat berbasis Flask dengan Apache Jena Fuseki dan SPARQL. Sistem mencocokkan gejala dengan obat, menyaring rekomendasi berdasarkan kondisi pasien dan alergi, menawarkan alternatif herbal, serta memberikan peringatan untuk gejala dengan tingkat urgensi tinggi melalui knowledge graph berbasis ontologi.",
+        "stack": ["Python", "Flask", "SPARQL", "Apache Jena Fuseki", "RDF / OWL"],
+        "repoUrl": "https://github.com/Pramudito2004/Semantic-Web-Project",
+        "details": [
+          "Menyempurnakan antarmuka Flask dan alur input untuk memilih gejala, kondisi pasien, serta alergi bahan aktif.",
+          "Memperbarui data knowledge graph RDF/OWL dan relasi ontologi yang digunakan oleh query rekomendasi obat.",
+          "Menyesuaikan alur rekomendasi berbasis SPARQL untuk mendukung filter kontraindikasi, alternatif herbal, dan peringatan gejala berurgensi tinggi."
+        ]
       }
     ],
     "education": [
       {
-        "period": "2022 — 2026",
-        "title": "S1 Informatika",
+        "period": "Aug 2022 — July 2026",
+        "title": "Bachelor of Informatics",
         "place": "Universitas Sebelas Maret",
-        "location": "",
-        "description": "Pendidikan sarjana Informatika dengan fokus akademik pada pengembangan perangkat lunak dan kecerdasan buatan.",
-        "details": [
-          "Tugas akhir: peringkasan otomatis ulasan film menggunakan model T5-Base dan BART-Base yang di-fine-tune.",
-          "Mengeksplorasi optimasi hyperparameter dan perbandingan strategi pelatihan berdasarkan sentimen ulasan."
-        ]
-      }
-    ],
-    "training": [
-      {
-        "period": "Sep 2024 — Jan 2025",
-        "title": "Jalur Back-End Development",
-        "place": "Bangkit Academy led by Google, Tokopedia, Gojek & Traveloka",
-        "location": "",
-        "description": "Pembelajaran profesional terstruktur dalam pengembangan back-end, cloud engineering, dan delivery capstone secara kolaboratif.",
-        "details": [
-          "Menyelesaikan jalur Web Basic, JavaScript Basic, Back-End Basic, dan Cloud Engineer.",
-          "Menyelesaikan capstone HealLink sebagai anggota tim lintas fungsi."
-        ]
+        "location": "Surakarta, Indonesia",
+        "gpa": "3.55/4.00",
+        "description": "",
+        "details": []
       }
     ],
     "certifications": [
