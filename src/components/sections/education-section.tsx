@@ -1,5 +1,5 @@
 import { ResumeCard } from "@/components/resume-card";
-import { education } from "@/content/portfolio";
+import { certifications, education, training } from "@/content/portfolio";
 
 export function EducationSection() {
   return (
@@ -11,12 +11,39 @@ export function EducationSection() {
             key={item.title}
             period={item.period}
             title={item.title}
-            subtitle={item.place}
+            subtitle={item.location ? `${item.place} · ${item.location}` : item.place}
             description={item.description}
             details={item.details}
             icon="graduation"
           />
         ))}
+      </div>
+      <div className="education-support">
+        <div className="education-training">
+          <p className="section-accent-label">Professional training</p>
+          {training.map((item) => (
+            <ResumeCard
+              key={item.title}
+              period={item.period}
+              title={item.title}
+              subtitle={item.location ? `${item.place} · ${item.location}` : item.place}
+              description={item.description}
+              details={item.details}
+              icon="code"
+            />
+          ))}
+        </div>
+        <div className="certification-list">
+          <p className="section-accent-label">Certifications</p>
+          <ul>
+            {certifications.map((item) => (
+              <li key={item.title}>
+                <strong>{item.title}</strong>
+                <span>{item.issuer}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

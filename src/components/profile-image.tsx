@@ -21,7 +21,7 @@ export function ProfileImage() {
           />
         )}
       </div>
-      <p>{imageUnavailable ? "Tambahkan public/images/profile.jpg" : "Muhammad Daffa' Ayyasy"}</p>
+      <p>{imageUnavailable ? "Profile image unavailable" : "Muhammad Daffa' Ayyasy"}</p>
     </div>
   );
 }

@@ -15,7 +15,7 @@ export function ExperienceSection() {
             key={item.period}
             period={item.period}
             title={item.role}
-            subtitle={item.company}
+            subtitle={item.location ? `${item.company} · ${item.location}` : item.company}
             description={item.description}
             details={item.details}
             icon={index === 0 ? "briefcase" : index === 1 ? "code" : "layers"}

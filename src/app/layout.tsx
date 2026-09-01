@@ -24,11 +24,11 @@ export const metadata: Metadata = {
     template: "%s — Muhammad Daffa' Ayyasy",
   },
   description:
-    "Portfolio Muhammad Daffa' Ayyasy, Software Engineer dengan fokus pada back-end development, cloud, dan AI/ML.",
+    "Portfolio of Muhammad Daffa' Ayyasy, a Fresh Graduate Software Engineer focused on backend development, cloud platforms, and applied AI.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "Muhammad Daffa' Ayyasy — Software Engineer",
-    description: "Pengalaman, proyek, dan keahlian Muhammad Daffa' Ayyasy dalam back-end development, cloud, dan AI/ML.",
+    description: "Experience, projects, and technical skills in backend development, cloud platforms, and applied AI/ML.",
     url: "https://daffaayyasy.com",
     siteName: "Muhammad Daffa' Ayyasy",
     type: "website",
@@ -39,7 +39,7 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="id" className={`${inter.variable} ${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${inter.variable} ${geistSans.variable} ${geistMono.variable}`}>
       <body>{children}</body>
     </html>
   );

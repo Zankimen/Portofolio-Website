@@ -22,7 +22,10 @@ export function HeroSection() {
         </div>
         <div className="hero-actions">
           <a className="download-button resume-button" href={profile.resumeUrl} target="_blank" rel="noreferrer">
-            Get CV <Icon name="download" size={17} />
+            English CV <Icon name="download" size={17} />
+          </a>
+          <a className="download-button" href={profile.resumeIdUrl} target="_blank" rel="noreferrer">
+            CV Indonesia <Icon name="download" size={17} />
           </a>
         </div>
       </div>

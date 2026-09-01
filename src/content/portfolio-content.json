@@ -1,0 +1,245 @@
+{
+  "shared": {
+    "socialLinks": [
+      { "label": "GitHub", "icon": "github", "href": "https://github.com/Zankimen" },
+      { "label": "LinkedIn", "icon": "linkedin", "href": "https://www.linkedin.com/in/muhammaddaffa-ayyasy-a72b86329" },
+      { "label": "Instagram", "icon": "instagram", "href": "https://www.instagram.com/zankimen/" }
+    ]
+  },
+  "en": {
+    "profile": {
+      "name": "Muhammad Daffa' Ayyasy",
+      "shortName": "DA",
+      "role": "Software Engineer",
+      "headline": "Fresh Graduate Software Engineer",
+      "location": "Yogyakarta, Indonesia",
+      "availability": "Fresh Graduate",
+      "email": "mayyas.md4@gmail.com",
+      "phone": "+62 821-3450-1114",
+      "focus": "Backend, cloud, and applied AI",
+      "summary": "Fresh Graduate Software Engineer with hands-on experience building backend features for a Laravel-based project management system and a Node.js health prediction application. Skilled in designing RESTful APIs, integrating cloud services, and applying Repository and Service Layer patterns to keep backend code maintainable. Currently completing a Bachelor's degree in Informatics, with an academic focus on NLP model fine-tuning and a strong interest in backend engineering, cloud platforms, and applied AI.",
+      "aboutDetail": "I enjoy turning clear requirements into reliable software. My experience spans Laravel, React, Node.js, Google Cloud, and machine learning integrations, with a practical focus on clean code, structured collaboration, and solutions that are easy to maintain."
+    },
+    "experience": [
+      {
+        "period": "Sep — Dec 2025",
+        "role": "Back End Developer",
+        "company": "Indarchi Architect Team — PKBM d'VASTU",
+        "location": "Klaten, Central Java",
+        "description": "Built worker-management capabilities for a modular Laravel project-management system with a React and Inertia.js frontend.",
+        "details": [
+          "Developed CRUD workflows, worker-to-project assignments, and project-specific worker roles and positions.",
+          "Implemented worker attendance connected to project-detail pages, including worker profile photo upload and display.",
+          "Applied Repository Pattern, Service Layer, and Form Request validation to separate business logic and input validation.",
+          "Collaborated through Git using member-based branching, code review, and merge workflows."
+        ]
+      },
+      {
+        "period": "Sep 2024 — Jan 2025",
+        "role": "Back-End Cohort — HealLink Capstone Project",
+        "company": "Bangkit Academy led by Google, Tokopedia, Gojek & Traveloka",
+        "location": "",
+        "description": "Contributed to the backend of a health-prediction application in a cross-functional team spanning backend, machine learning, and mobile development.",
+        "details": [
+          "Built RESTful registration and login APIs with bcrypt-based password protection.",
+          "Integrated TensorFlow.js model inference into the health-prediction API and stored prediction history in Google Cloud Firestore.",
+          "Containerized and deployed the backend service with Docker on Google Cloud Platform.",
+          "Completed structured learning in Web Basics, JavaScript Basics, Back-End Basics, and Cloud Engineering."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "title": "Languages & Frameworks",
+        "description": "Core technologies for web applications and backend services",
+        "items": ["PHP", "Laravel", "JavaScript", "Node.js", "Hapi.js", "React", "Inertia.js"]
+      },
+      {
+        "title": "Cloud & Databases",
+        "description": "Deployment, containerization, and application data storage",
+        "items": ["Google Cloud Platform", "Cloud Run", "Google Cloud Firestore", "MySQL", "Docker"]
+      },
+      {
+        "title": "AI & Machine Learning",
+        "description": "NLP fine-tuning, inference, and hyperparameter optimization",
+        "items": ["TensorFlow", "TensorFlow.js", "T5", "BART", "Optuna"]
+      },
+      {
+        "title": "Architecture & Tools",
+        "description": "Backend design patterns, APIs, and team collaboration",
+        "items": ["Git", "RESTful API Design", "Repository Pattern", "Service Layer", "Form Request"]
+      }
+    ],
+    "projects": [
+      {
+        "number": "01",
+        "title": "Automatic Film Review Summarization",
+        "type": "Undergraduate Thesis · 2025 — Present · NLP",
+        "description": "Developing an abstractive summarization model for more than 900,000 IMDb reviews by fine-tuning T5-Base and BART-Base, optimizing hyperparameters with Optuna TPE, and comparing separate and combined training strategies based on review sentiment.",
+        "stack": ["TensorFlow", "T5", "BART", "Optuna", "IMDb"]
+      },
+      {
+        "number": "02",
+        "title": "HealLink Health Prediction API",
+        "type": "Bangkit Academy · Capstone Project",
+        "description": "Backend API for user authentication and health prediction, integrating TensorFlow.js inference with Google Cloud Firestore and deployed using Docker on Google Cloud Platform.",
+        "stack": ["Node.js", "Hapi.js", "TensorFlow.js", "Firestore", "Docker"]
+      },
+      {
+        "number": "03",
+        "title": "Worker Management Module",
+        "type": "Project Management System · Professional Experience",
+        "description": "Laravel module covering worker CRUD, project assignments, project-specific roles, attendance, and profile photos, with business logic organized through Repository and Service Layers.",
+        "stack": ["Laravel", "React", "Inertia.js", "MySQL", "Git"]
+      }
+    ],
+    "education": [
+      {
+        "period": "2022 — 2026",
+        "title": "Bachelor of Informatics",
+        "place": "Universitas Sebelas Maret",
+        "location": "",
+        "description": "Undergraduate study in Informatics with an academic focus on software development and artificial intelligence.",
+        "details": [
+          "Undergraduate thesis: automatic film-review summarization using fine-tuned T5-Base and BART-Base models.",
+          "Exploring hyperparameter optimization and training-strategy comparisons based on review sentiment."
+        ]
+      }
+    ],
+    "training": [
+      {
+        "period": "Sep 2024 — Jan 2025",
+        "title": "Back-End Development Path",
+        "place": "Bangkit Academy led by Google, Tokopedia, Gojek & Traveloka",
+        "location": "",
+        "description": "Structured professional training in backend development, cloud engineering, and collaborative capstone delivery.",
+        "details": [
+          "Completed Web Basics, JavaScript Basics, Back-End Basics, and Cloud Engineering learning paths.",
+          "Delivered the HealLink health-prediction capstone as a member of a cross-functional team."
+        ]
+      }
+    ],
+    "certifications": [
+      { "title": "Application Development with Cloud Run", "issuer": "Google Cloud" },
+      { "title": "Becoming a Google Cloud Engineer", "issuer": "Dicoding / Bangkit Academy" }
+    ]
+  },
+  "id": {
+    "profile": {
+      "name": "Muhammad Daffa' Ayyasy",
+      "shortName": "DA",
+      "role": "Software Engineer",
+      "headline": "Fresh Graduate Software Engineer",
+      "location": "Yogyakarta, Indonesia",
+      "availability": "Fresh Graduate",
+      "email": "mayyas.md4@gmail.com",
+      "phone": "+62 821-3450-1114",
+      "focus": "Back-end, cloud, dan applied AI",
+      "summary": "Fresh Graduate Software Engineer dengan pengalaman langsung membangun fitur back-end untuk sistem manajemen proyek berbasis Laravel dan aplikasi prediksi kesehatan berbasis Node.js. Terampil merancang RESTful API, mengintegrasikan layanan cloud, serta menerapkan Repository Pattern dan Service Layer agar kode back-end tetap terstruktur dan mudah dipelihara. Sedang menyelesaikan pendidikan S1 Informatika dengan fokus akademik pada fine-tuning model NLP dan ketertarikan kuat pada back-end engineering, cloud, serta penerapan AI.",
+      "aboutDetail": "Saya senang menerjemahkan kebutuhan yang jelas menjadi perangkat lunak yang dapat diandalkan. Pengalaman saya mencakup Laravel, React, Node.js, Google Cloud, dan integrasi machine learning, dengan fokus praktis pada clean code, kolaborasi terstruktur, dan solusi yang mudah dipelihara."
+    },
+    "experience": [
+      {
+        "period": "Sep — Des 2025",
+        "role": "Back End Developer",
+        "company": "Indarchi Architect Team — PKBM d'VASTU",
+        "location": "Klaten, Jawa Tengah",
+        "description": "Mengembangkan fitur manajemen pekerja untuk sistem manajemen proyek modular berbasis Laravel dengan frontend React dan Inertia.js.",
+        "details": [
+          "Membangun alur CRUD, penugasan pekerja ke proyek, serta pengelolaan role dan posisi pekerja pada setiap proyek.",
+          "Mengimplementasikan presensi pekerja yang terhubung dengan halaman detail proyek, termasuk unggah dan tampilan foto profil pekerja.",
+          "Menerapkan Repository Pattern, Service Layer, dan validasi Form Request untuk memisahkan logika bisnis dan validasi input.",
+          "Berkolaborasi menggunakan Git dengan branching per anggota, code review, dan alur merge."
+        ]
+      },
+      {
+        "period": "Sep 2024 — Jan 2025",
+        "role": "Back-End Cohort — Capstone Project HealLink",
+        "company": "Bangkit Academy led by Google, Tokopedia, Gojek & Traveloka",
+        "location": "",
+        "description": "Berkontribusi pada back-end aplikasi prediksi kesehatan dalam tim lintas fungsi yang mencakup back-end, machine learning, dan mobile development.",
+        "details": [
+          "Membangun RESTful API untuk registrasi dan login dengan perlindungan password menggunakan bcrypt.",
+          "Mengintegrasikan inference model TensorFlow.js ke API prediksi kesehatan dan menyimpan riwayat prediksi di Google Cloud Firestore.",
+          "Melakukan containerization dan deployment layanan back-end menggunakan Docker di Google Cloud Platform.",
+          "Menyelesaikan pembelajaran terstruktur Web Basic, JavaScript Basic, Back-End Basic, dan Cloud Engineer."
+        ]
+      }
+    ],
+    "skills": [
+      {
+        "title": "Bahasa & Framework",
+        "description": "Teknologi utama untuk aplikasi web dan layanan back-end",
+        "items": ["PHP", "Laravel", "JavaScript", "Node.js", "Hapi.js", "React", "Inertia.js"]
+      },
+      {
+        "title": "Cloud & Database",
+        "description": "Deployment, containerization, dan penyimpanan data aplikasi",
+        "items": ["Google Cloud Platform", "Cloud Run", "Google Cloud Firestore", "MySQL", "Docker"]
+      },
+      {
+        "title": "AI & Machine Learning",
+        "description": "Fine-tuning NLP, inference, dan optimasi hyperparameter",
+        "items": ["TensorFlow", "TensorFlow.js", "T5", "BART", "Optuna"]
+      },
+      {
+        "title": "Arsitektur & Tools",
+        "description": "Pola desain back-end, API, dan kolaborasi tim",
+        "items": ["Git", "RESTful API Design", "Repository Pattern", "Service Layer", "Form Request"]
+      }
+    ],
+    "projects": [
+      {
+        "number": "01",
+        "title": "Peringkasan Otomatis Ulasan Film",
+        "type": "Tugas Akhir · 2025 — Sekarang · NLP",
+        "description": "Mengembangkan model abstractive summarization untuk lebih dari 900.000 ulasan IMDb melalui fine-tuning T5-Base dan BART-Base, optimasi hyperparameter dengan Optuna TPE, serta perbandingan strategi pelatihan terpisah dan gabungan berdasarkan sentimen ulasan.",
+        "stack": ["TensorFlow", "T5", "BART", "Optuna", "IMDb"]
+      },
+      {
+        "number": "02",
+        "title": "HealLink Health Prediction API",
+        "type": "Bangkit Academy · Capstone Project",
+        "description": "Back-end API untuk autentikasi pengguna dan prediksi kesehatan, dengan integrasi inference TensorFlow.js, penyimpanan Google Cloud Firestore, serta deployment menggunakan Docker di Google Cloud Platform.",
+        "stack": ["Node.js", "Hapi.js", "TensorFlow.js", "Firestore", "Docker"]
+      },
+      {
+        "number": "03",
+        "title": "Modul Manajemen Pekerja",
+        "type": "Sistem Manajemen Proyek · Pengalaman Profesional",
+        "description": "Modul Laravel yang mencakup CRUD pekerja, penugasan proyek, role per proyek, presensi, dan foto profil, dengan logika bisnis yang diatur melalui Repository dan Service Layer.",
+        "stack": ["Laravel", "React", "Inertia.js", "MySQL", "Git"]
+      }
+    ],
+    "education": [
+      {
+        "period": "2022 — 2026",
+        "title": "S1 Informatika",
+        "place": "Universitas Sebelas Maret",
+        "location": "",
+        "description": "Pendidikan sarjana Informatika dengan fokus akademik pada pengembangan perangkat lunak dan kecerdasan buatan.",
+        "details": [
+          "Tugas akhir: peringkasan otomatis ulasan film menggunakan model T5-Base dan BART-Base yang di-fine-tune.",
+          "Mengeksplorasi optimasi hyperparameter dan perbandingan strategi pelatihan berdasarkan sentimen ulasan."
+        ]
+      }
+    ],
+    "training": [
+      {
+        "period": "Sep 2024 — Jan 2025",
+        "title": "Jalur Back-End Development",
+        "place": "Bangkit Academy led by Google, Tokopedia, Gojek & Traveloka",
+        "location": "",
+        "description": "Pembelajaran profesional terstruktur dalam pengembangan back-end, cloud engineering, dan delivery capstone secara kolaboratif.",
+        "details": [
+          "Menyelesaikan jalur Web Basic, JavaScript Basic, Back-End Basic, dan Cloud Engineer.",
+          "Menyelesaikan capstone HealLink sebagai anggota tim lintas fungsi."
+        ]
+      }
+    ],
+    "certifications": [
+      { "title": "Application Development with Cloud Run", "issuer": "Google Cloud" },
+      { "title": "Menjadi Google Cloud Engineer", "issuer": "Dicoding / Bangkit Academy" }
+    ]
+  }
+}

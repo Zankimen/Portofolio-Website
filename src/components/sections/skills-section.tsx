@@ -32,8 +32,6 @@ export function SkillsSection() {
           </article>
         ))}
       </div>
-      <div className="skill-traits">
-      </div>
     </section>
   );
 }

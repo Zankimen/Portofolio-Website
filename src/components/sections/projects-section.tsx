@@ -11,7 +11,7 @@ export function ProjectsSection() {
             <div className={"project-preview preview-" + (index + 1)}>
               <div className="project-preview-dots"><i /><i /><i /></div>
               <div className="preview-content"><span>{project.number}</span><strong>{project.title.split(" ").slice(0, 2).join(" ")}</strong></div>
-              <div className="project-overlay"><a href="#contact">Discuss Project <Icon name="arrow" size={15} /></a></div>
+              <div className="project-overlay"><a href="#contact">Discuss this project <Icon name="arrow" size={15} /></a></div>
             </div>
             <div className="project-card-body">
               <span className="project-type">{project.type}</span>
