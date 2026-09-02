@@ -50,24 +50,14 @@
     ],
     "skills": [
       {
-        "title": "Languages & Frameworks",
-        "description": "Core technologies for web applications and backend services",
-        "items": ["PHP", "Laravel", "JavaScript", "Node.js", "Hapi.js", "React", "Inertia.js", "Python"]
-      },
-      {
-        "title": "Cloud & Databases",
-        "description": "Deployment, containerization, and application data storage",
-        "items": ["Google Cloud Platform", "MySQL", "Docker"]
-      },
-      {
         "title": "AI & Machine Learning",
-        "description": "NLP fine-tuning, inference, and hyperparameter optimization",
-        "items": ["TensorFlow", "TensorFlow.js", "PyTorch", "Transformers", "T5", "BART", "Optuna", "ROUGE / METEOR"]
+        "description": "Machine learning frameworks and transformer-based NLP",
+        "items": ["TensorFlow", "Transformers"]
       },
       {
         "title": "Architecture & Tools",
-        "description": "Backend design patterns, APIs, and team collaboration",
-        "items": ["Git", "RESTful API Design", "Repository Pattern", "Service Layer"]
+        "description": "Version control and backend API design",
+        "items": ["Git", "RESTful API Design"]
       }
     ],
     "projects": [
@@ -126,8 +116,16 @@
       }
     ],
     "certifications": [
-      { "title": "Application Development with Cloud Run", "issuer": "Google Cloud" },
-      { "title": "Becoming a Google Cloud Engineer", "issuer": "Dicoding / Bangkit Academy" }
+      {
+        "title": "Learn Machine Learning Implementation with Google Cloud",
+        "issuer": "Dicoding · 09 December 2024",
+        "href": "/certificates/learn-machine-learning-google-cloud.pdf"
+      },
+      {
+        "title": "Becoming a Google Cloud Engineer",
+        "issuer": "Dicoding · 24 November 2024",
+        "href": "/certificates/becoming-google-cloud-engineer.pdf"
+      }
     ]
   },
   "id": {
@@ -174,24 +172,14 @@
     ],
     "skills": [
       {
-        "title": "Bahasa & Framework",
-        "description": "Teknologi utama untuk aplikasi web dan layanan back-end",
-        "items": ["PHP", "Laravel", "JavaScript", "Node.js", "Hapi.js", "React", "Inertia.js", "Python"]
-      },
-      {
-        "title": "Cloud & Database",
-        "description": "Deployment, containerization, dan penyimpanan data aplikasi",
-        "items": ["Google Cloud Platform", "MySQL", "Docker"]
-      },
-      {
         "title": "AI & Machine Learning",
-        "description": "Fine-tuning NLP, inference, dan optimasi hyperparameter",
-        "items": ["TensorFlow", "TensorFlow.js", "PyTorch", "Transformers", "T5", "BART", "Optuna", "ROUGE / METEOR"]
+        "description": "Framework machine learning dan NLP berbasis transformer",
+        "items": ["TensorFlow", "Transformers"]
       },
       {
         "title": "Arsitektur & Tools",
-        "description": "Pola desain back-end, API, dan kolaborasi tim",
-        "items": ["Git", "RESTful API Design", "Repository Pattern", "Service Layer"]
+        "description": "Version control dan perancangan API back-end",
+        "items": ["Git", "RESTful API Design"]
       }
     ],
     "projects": [
@@ -250,8 +238,16 @@
       }
     ],
     "certifications": [
-      { "title": "Application Development with Cloud Run", "issuer": "Google Cloud" },
-      { "title": "Menjadi Google Cloud Engineer", "issuer": "Dicoding / Bangkit Academy" }
+      {
+        "title": "Belajar Penerapan Machine Learning dengan Google Cloud",
+        "issuer": "Dicoding · 09 Desember 2024",
+        "href": "/certificates/learn-machine-learning-google-cloud.pdf"
+      },
+      {
+        "title": "Menjadi Google Cloud Engineer",
+        "issuer": "Dicoding · 24 November 2024",
+        "href": "/certificates/becoming-google-cloud-engineer.pdf"
+      }
     ]
   }
 }

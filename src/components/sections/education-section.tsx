@@ -25,8 +25,10 @@ export function EducationSection() {
           <ul>
             {certifications.map((item) => (
               <li key={item.title}>
-                <strong>{item.title}</strong>
-                <span>{item.issuer}</span>
+                <a href={item.href} target="_blank" rel="noreferrer">
+                  <strong>{item.title}</strong>
+                  <span>{item.issuer}</span>
+                </a>
               </li>
             ))}
           </ul>

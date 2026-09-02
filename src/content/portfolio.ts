@@ -67,6 +67,7 @@ export type ResumeEntry = {
 export type Certification = {
   title: string;
   issuer: string;
+  href: string;
 };
 
 export type PortfolioLocaleContent = {

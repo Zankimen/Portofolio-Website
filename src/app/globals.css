@@ -1648,6 +1648,19 @@ ul {
   line-height: 1.45;
 }
 
+.certification-list a {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+  text-decoration: none;
+}
+
+.certification-list a:hover strong,
+.certification-list a:focus-visible strong {
+  color: var(--accent-bright);
+}
+
 .certification-list span {
   color: var(--text-muted);
   font-size: 0.75rem;
