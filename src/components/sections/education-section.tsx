@@ -15,6 +15,7 @@ export function EducationSection() {
             description={item.description}
             details={item.details}
             icon="graduation"
+            logo="/images/uns-logo.jpeg"
           />
         ))}
       </div>

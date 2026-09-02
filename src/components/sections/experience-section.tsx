@@ -19,6 +19,7 @@ export function ExperienceSection() {
             description={item.description}
             details={item.details}
             icon={index === 0 ? "briefcase" : index === 1 ? "code" : "layers"}
+            logo={index === 0 ? "/images/indarchi-logo.png" : "/images/bangkit-logo.jpg"}
           />
         ))}
       </div>

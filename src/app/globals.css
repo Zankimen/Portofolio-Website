@@ -475,16 +475,16 @@ ul {
   width: 9px;
   height: 9px;
   border-radius: 50%;
-  background: var(--purple);
+  background: #ff5f57;
 }
 
 .terminal-dots i:nth-child(2),
 .project-preview-dots i:nth-child(2),
-.illustration-window-bar i:nth-child(2) { background: var(--accent-bright); }
+.illustration-window-bar i:nth-child(2) { background: #febc2e; }
 
 .terminal-dots i:nth-child(3),
 .project-preview-dots i:nth-child(3),
-.illustration-window-bar i:nth-child(3) { background: rgba(255, 255, 255, 0.45); }
+.illustration-window-bar i:nth-child(3) { background: #28c840; }
 
 .terminal-lines {
   display: flex;
@@ -1108,6 +1108,13 @@ ul {
   color: var(--purple);
 }
 
+.card-logo {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.22));
+}
+
 .card-main {
   position: relative;
   z-index: 1;
@@ -1420,6 +1427,19 @@ ul {
   background: #0a0a0c;
 }
 
+.project-preview-image {
+  z-index: 0;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0.9;
+  transition: transform 500ms var(--ease), opacity 300ms var(--ease);
+}
+
+.project-card:hover .project-preview-image {
+  transform: scale(1.04);
+  opacity: 1;
+}
+
 .project-preview::before {
   position: absolute;
   inset: 0;
@@ -1432,6 +1452,7 @@ ul {
 
 .project-preview-dots {
   position: absolute;
+  z-index: 2;
   top: 13px;
   left: 15px;
 }

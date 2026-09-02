@@ -5,7 +5,6 @@ export function HeroSection() {
   return (
     <section id="home" className="hero-portfolio">
       <div className="hero-portfolio-copy">
-        <p className="hero-kicker"><span className="status-dot" /> {profile.availability}</p>
         <h1>
           Hello,
           <br />

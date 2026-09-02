@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useId, useRef, useState, type PointerEvent } from "react";
+import Image from "next/image";
 import { Icon } from "@/components/icons";
 
 type ResumeCardProps = {
@@ -11,6 +12,7 @@ type ResumeCardProps = {
   details: string[];
   icon: "briefcase" | "code" | "layers" | "graduation";
   initialOpen?: boolean;
+  logo?: string;
 };
 
 export function ResumeCard({
@@ -21,6 +23,7 @@ export function ResumeCard({
   details,
   icon,
   initialOpen = false,
+  logo,
 }: ResumeCardProps) {
   const [isOpen, setIsOpen] = useState(initialOpen);
   const detailsId = useId();
@@ -77,7 +80,9 @@ export function ResumeCard({
       >
         <div className="glows" aria-hidden="true" />
         <div className="resume-card-header">
-          <div className="card-icon"><Icon name={icon} size={26} /></div>
+          <div className="card-icon">
+            {logo ? <Image src={logo} alt="" width={36} height={36} className="card-logo" /> : <Icon name={icon} size={26} />}
+          </div>
           <div className="card-main">
             <span className="date-pill">{period}</span>
             <h3>{title}</h3>

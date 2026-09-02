@@ -50,6 +50,7 @@ export type Project = {
   stack: string[];
   repoUrl: string;
   details: string[];
+  previewImage?: string;
 };
 
 export type ResumeEntry = {
@@ -60,6 +61,7 @@ export type ResumeEntry = {
   description: string;
   details: string[];
   gpa?: string;
+  logo?: string;
 };
 
 export type Certification = {

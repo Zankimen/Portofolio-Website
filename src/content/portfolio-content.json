@@ -57,7 +57,7 @@
       {
         "title": "Cloud & Databases",
         "description": "Deployment, containerization, and application data storage",
-        "items": ["Google Cloud Platform", "Cloud Run", "Google Cloud Firestore", "MySQL", "Docker"]
+        "items": ["Google Cloud Platform", "MySQL", "Docker"]
       },
       {
         "title": "AI & Machine Learning",
@@ -78,6 +78,7 @@
         "description": "Built a reproducible NLP experimentation pipeline for film-review summarization: review preprocessing, five-review block construction, sentiment-balanced train/validation/test splits, fine-tuning T5-Base, and a BART-Base baseline. Hyperparameters are tuned with Optuna TPE and outputs are evaluated with ROUGE and METEOR.",
         "stack": ["Python", "PyTorch", "Transformers", "T5", "BART", "Optuna"],
         "repoUrl": "https://github.com/Zankimen/abstractive-film-review-summarization",
+        "previewImage": "/images/skripsi.jpeg",
         "details": [
           "Designed preprocessing and dataset-validation scripts that group five reviews, enforce helpfulness criteria, and produce balanced sentiment splits.",
           "Implemented fine-tuning experiments for google-t5/t5-base and a facebook/bart-base baseline across combined and sentiment-separated scenarios.",
@@ -91,6 +92,7 @@
         "description": "Contributed to a full-stack event ticketing platform with customer and organizer flows: authentication, event discovery and search, event and ticket-type management, image upload, transactional ticket ordering, Midtrans payment integration, QR ticket generation and verification, and organizer reports.",
         "stack": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Midtrans", "Docker"],
         "repoUrl": "https://github.com/Pramudito2004/BookIt",
+        "previewImage": "/images/bookit.jpeg",
         "details": [
           "Implemented organizer dashboard, reporting-page, sidebar-navigation, and customer-account flow updates across the Next.js application.",
           "Worked across API routes for authentication, events, orders, ticket verification, profiles, and uploads using Prisma and PostgreSQL.",
@@ -178,7 +180,7 @@
       {
         "title": "Cloud & Database",
         "description": "Deployment, containerization, dan penyimpanan data aplikasi",
-        "items": ["Google Cloud Platform", "Cloud Run", "Google Cloud Firestore", "MySQL", "Docker"]
+        "items": ["Google Cloud Platform", "MySQL", "Docker"]
       },
       {
         "title": "AI & Machine Learning",
@@ -199,6 +201,7 @@
         "description": "Membangun pipeline eksperimen NLP yang reproducible untuk peringkasan ulasan film: preprocessing ulasan, penyusunan blok lima ulasan, pembagian data train/validation/test yang seimbang berdasarkan sentimen, fine-tuning T5-Base, dan baseline BART-Base. Hyperparameter dioptimalkan dengan Optuna TPE dan hasil dievaluasi menggunakan ROUGE serta METEOR.",
         "stack": ["Python", "PyTorch", "Transformers", "T5", "BART", "Optuna"],
         "repoUrl": "https://github.com/Zankimen/abstractive-film-review-summarization",
+        "previewImage": "/images/skripsi.jpeg",
         "details": [
           "Merancang script preprocessing dan validasi dataset untuk mengelompokkan lima ulasan, menerapkan kriteria helpfulness, dan menghasilkan split sentimen yang seimbang.",
           "Mengimplementasikan eksperimen fine-tuning google-t5/t5-base dan baseline facebook/bart-base pada skenario gabungan serta pemisahan sentimen.",
@@ -212,6 +215,7 @@
         "description": "Berkontribusi pada platform ticketing event full-stack dengan alur customer dan organizer: autentikasi, pencarian event, pengelolaan event dan tipe tiket, unggah gambar, pemesanan tiket transaksional, integrasi pembayaran Midtrans, pembuatan dan verifikasi tiket QR, serta laporan organizer.",
         "stack": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Midtrans", "Docker"],
         "repoUrl": "https://github.com/Pramudito2004/BookIt",
+        "previewImage": "/images/bookit.jpeg",
         "details": [
           "Mengimplementasikan pembaruan dashboard organizer, halaman laporan, navigasi sidebar, dan alur perpindahan akun customer pada aplikasi Next.js.",
           "Bekerja pada route API untuk autentikasi, event, order, verifikasi tiket, profil, dan upload menggunakan Prisma serta PostgreSQL.",

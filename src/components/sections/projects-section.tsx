@@ -1,4 +1,5 @@
 import { Icon } from "@/components/icons";
+import Image from "next/image";
 import { projects } from "@/content/portfolio";
 
 export function ProjectsSection() {
@@ -10,7 +11,11 @@ export function ProjectsSection() {
           <article className="project-card" key={project.number}>
             <div className={"project-preview preview-" + (index + 1)}>
               <div className="project-preview-dots"><i /><i /><i /></div>
-              <div className="preview-content"><span>{project.number}</span><strong>{project.title.split(" ").slice(0, 2).join(" ")}</strong></div>
+              {project.previewImage ? (
+                <Image src={project.previewImage} alt={project.title + " preview"} fill sizes="(max-width: 680px) 100vw, 33vw" className="project-preview-image" />
+              ) : (
+                <div className="preview-content"><span>{project.number}</span><strong>{project.title.split(" ").slice(0, 2).join(" ")}</strong></div>
+              )}
               <div className="project-overlay"><a href={project.repoUrl} target="_blank" rel="noreferrer">View repository <Icon name="arrow" size={15} /></a></div>
             </div>
             <div className="project-card-body">
