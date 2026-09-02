@@ -67,14 +67,14 @@
       {
         "title": "Architecture & Tools",
         "description": "Backend design patterns, APIs, and team collaboration",
-        "items": ["Git", "RESTful API Design", "Repository Pattern", "Service Layer", "Form Request"]
+        "items": ["Git", "RESTful API Design", "Repository Pattern", "Service Layer"]
       }
     ],
     "projects": [
       {
         "number": "01",
         "title": "Abstractive Film Review Summarization",
-        "type": "Undergraduate Thesis · 2025 — Present · NLP",
+        "type": "Thesis · NLP",
         "description": "Built a reproducible NLP experimentation pipeline for film-review summarization: review preprocessing, five-review block construction, sentiment-balanced train/validation/test splits, fine-tuning T5-Base, and a BART-Base baseline. Hyperparameters are tuned with Optuna TPE and outputs are evaluated with ROUGE and METEOR.",
         "stack": ["Python", "PyTorch", "Transformers", "T5", "BART", "Optuna"],
         "repoUrl": "https://github.com/Zankimen/abstractive-film-review-summarization",
@@ -106,6 +106,7 @@
         "description": "Enhanced a Flask medicine-recommendation application backed by Apache Jena Fuseki and SPARQL. The system matches symptoms to medicines, filters recommendations by patient conditions and allergies, offers herbal alternatives, and warns users about high-urgency symptoms through an ontology-based knowledge graph.",
         "stack": ["Python", "Flask", "SPARQL", "Apache Jena Fuseki", "RDF / OWL"],
         "repoUrl": "https://github.com/Pramudito2004/Semantic-Web-Project",
+        "previewImage": "/images/teman-klinik.png",
         "details": [
           "Refined the Flask interface and input flow for selecting symptoms, patient conditions, and active-ingredient allergies.",
           "Updated the RDF/OWL knowledge graph data and ontology relationships used by the medicine-recommendation queries.",
@@ -190,14 +191,14 @@
       {
         "title": "Arsitektur & Tools",
         "description": "Pola desain back-end, API, dan kolaborasi tim",
-        "items": ["Git", "RESTful API Design", "Repository Pattern", "Service Layer", "Form Request"]
+        "items": ["Git", "RESTful API Design", "Repository Pattern", "Service Layer"]
       }
     ],
     "projects": [
       {
         "number": "01",
         "title": "Peringkasan Abstraktif Ulasan Film",
-        "type": "Tugas Akhir · 2025 — Sekarang · NLP",
+        "type": "Skripsi · NLP",
         "description": "Membangun pipeline eksperimen NLP yang reproducible untuk peringkasan ulasan film: preprocessing ulasan, penyusunan blok lima ulasan, pembagian data train/validation/test yang seimbang berdasarkan sentimen, fine-tuning T5-Base, dan baseline BART-Base. Hyperparameter dioptimalkan dengan Optuna TPE dan hasil dievaluasi menggunakan ROUGE serta METEOR.",
         "stack": ["Python", "PyTorch", "Transformers", "T5", "BART", "Optuna"],
         "repoUrl": "https://github.com/Zankimen/abstractive-film-review-summarization",
@@ -229,6 +230,7 @@
         "description": "Mengembangkan dan menyempurnakan aplikasi rekomendasi obat berbasis Flask dengan Apache Jena Fuseki dan SPARQL. Sistem mencocokkan gejala dengan obat, menyaring rekomendasi berdasarkan kondisi pasien dan alergi, menawarkan alternatif herbal, serta memberikan peringatan untuk gejala dengan tingkat urgensi tinggi melalui knowledge graph berbasis ontologi.",
         "stack": ["Python", "Flask", "SPARQL", "Apache Jena Fuseki", "RDF / OWL"],
         "repoUrl": "https://github.com/Pramudito2004/Semantic-Web-Project",
+        "previewImage": "/images/teman-klinik.png",
         "details": [
           "Menyempurnakan antarmuka Flask dan alur input untuk memilih gejala, kondisi pasien, serta alergi bahan aktif.",
           "Memperbarui data knowledge graph RDF/OWL dan relasi ontologi yang digunakan oleh query rekomendasi obat.",
