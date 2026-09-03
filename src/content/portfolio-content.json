@@ -86,7 +86,7 @@
       {
         "number": "02",
         "title": "BookIt Event Ticketing Platform",
-        "type": "University Project · Full-Stack Web Application",
+        "type": "Project · Full-Stack Web Application",
         "description": "Contributed to a full-stack event ticketing platform with customer and organizer flows: authentication, event discovery and search, event and ticket-type management, image upload, transactional ticket ordering, Midtrans payment integration, QR ticket generation and verification, and organizer reports.",
         "stack": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Midtrans", "Docker"],
         "repoUrl": "https://github.com/Pramudito2004/BookIt",
@@ -100,7 +100,7 @@
       {
         "number": "03",
         "title": "Teman Klinik Medicine Recommendation System",
-        "type": "University Project · Semantic Web",
+        "type": "Project · Semantic Web",
         "description": "Enhanced a Flask medicine-recommendation application backed by Apache Jena Fuseki and SPARQL. The system matches symptoms to medicines, filters recommendations by patient conditions and allergies, offers herbal alternatives, and warns users about high-urgency symptoms through an ontology-based knowledge graph.",
         "stack": ["Python", "Flask", "SPARQL", "Apache Jena Fuseki", "RDF / OWL"],
         "repoUrl": "https://github.com/Pramudito2004/Semantic-Web-Project",
@@ -216,7 +216,7 @@
       {
         "number": "02",
         "title": "BookIt Event Ticketing Platform",
-        "type": "Project Kuliah · Aplikasi Web Full-Stack",
+        "type": "Project · Aplikasi Web Full-Stack",
         "description": "Berkontribusi pada platform ticketing event full-stack dengan alur customer dan organizer: autentikasi, pencarian event, pengelolaan event dan tipe tiket, unggah gambar, pemesanan tiket transaksional, integrasi pembayaran Midtrans, pembuatan dan verifikasi tiket QR, serta laporan organizer.",
         "stack": ["Next.js", "TypeScript", "Prisma", "PostgreSQL", "Midtrans", "Docker"],
         "repoUrl": "https://github.com/Pramudito2004/BookIt",
@@ -230,7 +230,7 @@
       {
         "number": "03",
         "title": "Sistem Rekomendasi Obat Teman Klinik",
-        "type": "Project Kuliah · Semantic Web",
+        "type": "Project · Semantic Web",
         "description": "Mengembangkan dan menyempurnakan aplikasi rekomendasi obat berbasis Flask dengan Apache Jena Fuseki dan SPARQL. Sistem mencocokkan gejala dengan obat, menyaring rekomendasi berdasarkan kondisi pasien dan alergi, menawarkan alternatif herbal, serta memberikan peringatan untuk gejala dengan tingkat urgensi tinggi melalui knowledge graph berbasis ontologi.",
         "stack": ["Python", "Flask", "SPARQL", "Apache Jena Fuseki", "RDF / OWL"],
         "repoUrl": "https://github.com/Pramudito2004/Semantic-Web-Project",

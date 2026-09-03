@@ -1439,6 +1439,10 @@ ul {
   transition: transform 500ms var(--ease), opacity 300ms var(--ease);
 }
 
+.preview-1 .project-preview-image {
+  object-position: center top;
+}
+
 .project-card:hover .project-preview-image {
   transform: scale(1.04);
   opacity: 1;
@@ -2020,6 +2024,15 @@ ul {
     min-height: 290px;
   }
 
+  .experience-section {
+    gap: 0;
+  }
+
+  .experience-section .experience-art {
+    display: none;
+    min-height: 0;
+  }
+
   .experience-cards,
   .education-cards {
     order: 2;
@@ -2162,6 +2175,15 @@ ul {
   .project-card,
   .floating-nav {
     backdrop-filter: none;
+  }
+
+  .experience-section {
+    gap: 0;
+  }
+
+  .experience-section .experience-art {
+    display: none;
+    min-height: 0;
   }
 }
 
