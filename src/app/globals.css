@@ -1440,7 +1440,18 @@ ul {
 }
 
 .preview-1 .project-preview-image {
-  object-position: center top;
+  object-fit: contain;
+  object-position: center;
+  padding: 28px;
+  opacity: 1;
+}
+
+.preview-1 {
+  background: #f4f4f5;
+}
+
+.preview-1::before {
+  background: radial-gradient(circle at 50% 0%, rgba(94, 106, 210, 0.06), transparent 62%);
 }
 
 .project-card:hover .project-preview-image {
@@ -2186,6 +2197,57 @@ ul {
   .experience-section .experience-art {
     display: none;
     min-height: 0;
+  }
+
+  .hero-name,
+  .hero-role,
+  .code-line,
+  .terminal-cursor {
+    animation: none;
+  }
+
+  .code-line {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Safari benefits from a simpler compositing path for the large ambient layers. */
+@supports (-webkit-touch-callout: none) {
+  .ambient-blob {
+    filter: none;
+    animation: none;
+  }
+
+  .ambient-blob-secondary,
+  .ambient-blob-tertiary,
+  .ambient-blob-bottom {
+    display: none;
+  }
+
+  .skills-group,
+  .project-card,
+  .floating-nav,
+  .project-overlay {
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
+  }
+
+  .hero-portfolio-copy,
+  .hero-portfolio-art {
+    transition: none;
+  }
+
+  .hero-name,
+  .hero-role,
+  .code-line,
+  .terminal-cursor {
+    animation: none;
+  }
+
+  .code-line {
+    opacity: 1;
+    transform: none;
   }
 }
 
