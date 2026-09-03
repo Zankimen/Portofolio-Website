@@ -16,6 +16,9 @@ export function ExperienceAnimation() {
     const container = containerRef.current;
     if (!container) return;
 
+    const shouldReduceEffects = window.matchMedia("(prefers-reduced-motion: reduce), (pointer: coarse)").matches;
+    if (shouldReduceEffects || typeof IntersectionObserver === "undefined") return;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (!entry.isIntersecting) return;
