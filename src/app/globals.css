@@ -2025,6 +2025,7 @@ ul {
   }
 
   .experience-section {
+    grid-template-columns: 1fr;
     gap: 0;
   }
 
@@ -2178,6 +2179,7 @@ ul {
   }
 
   .experience-section {
+    grid-template-columns: 1fr;
     gap: 0;
   }
 
