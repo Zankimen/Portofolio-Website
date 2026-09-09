@@ -801,9 +801,7 @@ ul {
   place-items: center;
   border: 1px solid rgba(94, 106, 210, 0.45);
   border-radius: 16px;
-  background:
-    radial-gradient(circle at 65% 25%, rgba(94, 106, 210, 0.2), transparent 22%),
-    linear-gradient(145deg, rgba(94, 106, 210, 0.28), var(--background-elevated) 65%, var(--background-deep));
+  background: #fff;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 55px rgba(94, 106, 210, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.12);
   color: var(--accent-bright);
   font-family: var(--font-geist-mono), monospace;
@@ -815,10 +813,12 @@ ul {
 .profile-placeholder-inner img {
   object-fit: cover;
   object-position: center;
-  transform: translateX(-0.7%) scale(0.96);
-  transform-origin: center;
-  background: #fff;
-  box-shadow: 0 0 0 24px #fff;
+  top: 0 !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: 2.3% !important;
+  width: 94% !important;
+  height: 100% !important;
 }
 
 .profile-placeholder-inner:hover {
