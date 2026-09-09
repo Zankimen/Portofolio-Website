@@ -814,7 +814,11 @@ ul {
 
 .profile-placeholder-inner img {
   object-fit: cover;
-  object-position: center 56%;
+  object-position: center;
+  transform: translateX(-0.7%) scale(0.96);
+  transform-origin: center;
+  background: #fff;
+  box-shadow: 0 0 0 24px #fff;
 }
 
 .profile-placeholder-inner:hover {
