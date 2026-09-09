@@ -15,7 +15,8 @@ export function ProfileImage() {
           <Image
             src="/images/profile-about-square.jpg"
             alt="Foto profil Muhammad Daffa' Ayyasy"
-            fill
+            width={1100}
+            height={1100}
             sizes="(max-width: 680px) 72vw, 280px"
             onError={() => setImageUnavailable(true)}
           />
