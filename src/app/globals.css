@@ -813,12 +813,6 @@ ul {
 .profile-placeholder-inner img {
   object-fit: cover;
   object-position: center;
-  top: 0 !important;
-  right: auto !important;
-  bottom: auto !important;
-  left: 2.3% !important;
-  width: 94% !important;
-  height: 100% !important;
 }
 
 .profile-placeholder-inner:hover {

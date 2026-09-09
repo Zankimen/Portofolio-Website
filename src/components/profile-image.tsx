@@ -13,7 +13,7 @@ export function ProfileImage() {
           <span aria-hidden="true">DA</span>
         ) : (
           <Image
-            src="/images/profile.jpg"
+            src="/images/profile-about.png"
             alt="Foto profil Muhammad Daffa' Ayyasy"
             fill
             sizes="(max-width: 680px) 72vw, 280px"
