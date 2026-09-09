@@ -799,7 +799,6 @@ ul {
   width: 280px;
   height: 280px;
   place-items: center;
-  border: 1px solid rgba(94, 106, 210, 0.45);
   border-radius: 16px;
   background: #fff;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.06), 0 12px 30px rgba(0, 0, 0, 0.4), 0 0 55px rgba(94, 106, 210, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.12);
@@ -810,7 +809,19 @@ ul {
   transition: filter 600ms var(--ease), transform 600ms var(--ease);
 }
 
+.profile-placeholder-inner::after {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  border: 1px solid rgba(94, 106, 210, 0.45);
+  border-radius: inherit;
+  box-sizing: border-box;
+  pointer-events: none;
+  content: "";
+}
+
 .profile-placeholder-inner img {
+  z-index: 1;
   object-fit: cover;
   object-position: center;
 }
