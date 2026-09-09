@@ -814,6 +814,7 @@ ul {
 
 .profile-placeholder-inner img {
   object-fit: cover;
+  object-position: center 56%;
 }
 
 .profile-placeholder-inner:hover {
