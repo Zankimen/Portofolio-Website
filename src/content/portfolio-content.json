@@ -54,8 +54,8 @@
       },
       {
         "title": "Cloud & Databases",
-        "description": "Cloud deployment, containerization, and application data storage",
-        "items": ["Google Cloud Platform", "MySQL", "Docker"]
+        "description": "Cloud deployment and relational application data storage",
+        "items": ["Google Cloud Platform", "MySQL", "PostgreSQL"]
       },
       {
         "title": "AI & Machine Learning",
@@ -64,8 +64,8 @@
       },
       {
         "title": "Architecture & Tools",
-        "description": "Version control and backend API design",
-        "items": ["Git", "RESTful API Design"]
+        "description": "Version control, containerization, and backend API design",
+        "items": ["Git", "Docker", "RESTful API Design"]
       }
     ],
     "projects": [
@@ -184,8 +184,8 @@
       },
       {
         "title": "Cloud & Database",
-        "description": "Deployment, containerization, dan penyimpanan data aplikasi",
-        "items": ["Google Cloud Platform", "MySQL", "Docker"]
+        "description": "Deployment cloud dan penyimpanan data relasional aplikasi",
+        "items": ["Google Cloud Platform", "MySQL", "PostgreSQL"]
       },
       {
         "title": "AI & Machine Learning",
@@ -194,8 +194,8 @@
       },
       {
         "title": "Arsitektur & Tools",
-        "description": "Version control dan perancangan API back-end",
-        "items": ["Git", "RESTful API Design"]
+        "description": "Version control, containerization, dan perancangan API back-end",
+        "items": ["Git", "Docker", "RESTful API Design"]
       }
     ],
     "projects": [

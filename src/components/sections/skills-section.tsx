@@ -16,6 +16,7 @@ const brandLogoBySkill: Record<string, string> = {
   "Cloud Run": "google-cloud",
   "Google Cloud Firestore": "google-cloud",
   MySQL: "mysql",
+  PostgreSQL: "postgresql",
   Docker: "docker",
   TensorFlow: "tensorflow",
   "TensorFlow.js": "tensorflow",
